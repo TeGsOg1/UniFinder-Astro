@@ -1,0 +1,85 @@
+---
+
+---
+
+<nav class="fixed-top">
+  <input type="checkbox" id="check" />
+  <label for="check" class="barritas">
+    <i class="fa-solid fa-bars"></i>
+  </label>
+  <div class="uf-class" >
+    <a href="/index.astro"><img id="uf-logo" src="/LogoUF.png" alt="Logo UF" />UniFinder</a>
+  </div>
+  <ul>
+    <li class="inicio"><a id="inicio" href="index.astro">Inicio</a></li>
+    <li class="test-voc"><a href="#test-voc">Test vocacional</a></li>
+    <li class="Contacto"><a href="#footer">Contacto</a></li>
+  </ul>
+</nav>
+
+<style>
+    nav {
+    background-color: var(--color-principal-);
+    height: 60px;
+    width: 100%;
+}
+
+nav ul {
+    float: right;
+    font-size: 20px;
+    padding-bottom: 10px;
+    cursor: default;
+
+}
+
+nav li {
+    margin-right: 10px;
+    margin-top: 30px;
+}
+
+nav ul li {
+    margin-top: 17px;
+    display: inline-block;
+
+}
+
+nav a {
+    text-decoration: none;
+    justify-content: center;
+    border-radius: 30px;
+    padding: 0.5rem 1rem;
+    border: none;
+    color: aliceblue;
+    transition: .2s all ease;
+}
+
+.uf-class {
+    margin-top: 5px;
+    position: fixed;
+    margin-right: auto;
+    padding-left: 10px;
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+
+#uf-logo {
+    padding-right: 5px;
+    height: 56px;
+    padding-bottom: 9px;
+}
+
+
+.barritas {
+    cursor: pointer;
+    font-size: 30px;
+    float: right;
+    margin-right: 60px;
+    line-height: 64px;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+</style>
