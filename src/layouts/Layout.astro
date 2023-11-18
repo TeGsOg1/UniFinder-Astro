@@ -1,4 +1,5 @@
 ---
+
 interface Props {
   title: string;
 }
@@ -23,7 +24,78 @@ const { title } = Astro.props;
     <title>{title}</title>
   </head>
   <body>
-    <slot />
+    <nav class="fixed-top">
+      <input type="checkbox" id="check" />
+      <label for="check" class="barritas">
+        <i class="fa-solid fa-bars"></i>
+      </label>
+      <div class="uf-class">
+        <a href="/index.astro"
+          ><img id="uf-logo" src="/LogoUF.png" alt="Logo UF" />UniFinder</a
+        >
+      </div>
+      <ul>
+        <li class="inicio"><a id="inicio" href="index.astro">Inicio</a></li>
+        <li class="test-voc"><a href="#test-voc">Test vocacional</a></li>
+        <li class="Contacto"><a href="#footer">Contacto</a></li>
+      </ul>
+    </nav>
+            <slot />
+    <footer class="footer" id="footer">
+      <div class="container">
+        <div class="footer-row">
+          <div class="footer-links">
+            <h3>Creadores</h3>
+            <ul>
+              <li><a href="/Footer/nosotros.astro">Nosotros</a></li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h3>Contactános</h3>
+            <ul>
+              <li><a href="/Footer/contacto.astro">Contacto</a></li>
+              <li>
+                <a href="/Footer/promociona.astro">Promociona tu Universidad</a>
+              </li>
+              <li><a href="/Footer/sugerencias.astro">Enviá sugerencias</a></li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h3>Nuestras redes</h3>
+            <span class="redes-logos"
+              ><a
+                href="https://twitter.com/Uni_Finder_?t=ii4brxzs_pgnH5b4bmk1ug&s=08"
+                ,
+                target="_blank"><i class="fa-brands fa-twitter"></i></a
+              ></span
+            >
+            <span class="redes-logos"
+              ><a
+                href="https://instagram.com/uni_finder_?utm_source=qr&igshid=ZDc4ODBmNjlmNQ%3D%3D"
+                ,
+                target="_blank"><i class="fa-brands fa-instagram"></i></a
+              ></span
+            >
+            <span class="redes-logos"
+              ><a
+                href="https://github.com/TeGsOg1/UniFinder.git"
+                ,
+                target="_blank"><i class="fa-brands fa-github"></i></a
+              ></span
+            >
+          </div>
+          <div class="footer-links">
+            <h3>Derechos</h3>
+            <span id="copy"
+              >Copyright © Todos los derechos reservados / UniFinder</span
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/6542a09f67.js"
+      crossorigin="anonymous"></script>
   </body>
 </html>
 <style is:global>
@@ -47,7 +119,7 @@ const { title } = Astro.props;
 
   @font-face {
     font-family: Segoe UI Variable;
-    src: url(/Font/Segoe-UI-Variable-Static-Display.ttf);
+    src: url(/public/font/Segoe-UI-Variable-Static-Display.ttf);
   }
 
   html {
@@ -57,6 +129,7 @@ const { title } = Astro.props;
   }
 
   body {
+    overflow-x: hidden;
     background-size: cover;
     background-repeat: no-repeat;
     font-family:
@@ -74,5 +147,207 @@ const { title } = Astro.props;
   body::-webkit-scrollbar-thumb {
     border-radius: 5px;
     background: linear-gradient(rgb(0, 76, 255), rgb(0, 187, 255));
+  }
+
+  /* Barra de navegacion
+------------------------- */
+
+  nav {
+    background-color: var(--color-principal-);
+    height: 60px;
+    width: 100%;
+  }
+
+  nav ul {
+    float: right;
+    font-size: 20px;
+    padding-bottom: 10px;
+    cursor: default;
+  }
+
+  nav li {
+    margin-right: 10px;
+    margin-top: 30px;
+  }
+
+  nav ul li {
+    margin-top: 17px;
+    display: inline-block;
+  }
+
+  nav a {
+    text-decoration: none;
+    justify-content: center;
+    border-radius: 30px;
+    padding: 0.5rem 1rem;
+    border: none;
+    color: aliceblue;
+    transition: 0.2s all ease;
+  }
+
+  nav a:hover {
+    color: aliceblue;
+    text-decoration: none;
+  }
+
+  .uf-class {
+    margin-top: 5px;
+    position: fixed;
+    margin-right: auto;
+    padding-left: 10px;
+    font-size: 25px;
+    padding-bottom: 10px;
+  }
+
+  #uf-logo {
+    padding-right: 5px;
+    height: 56px;
+    padding-bottom: 9px;
+  }
+
+  .barritas {
+    cursor: pointer;
+    font-size: 30px;
+    float: right;
+    margin-right: 60px;
+    line-height: 64px;
+    display: none;
+  }
+
+  #check {
+    display: none;
+  }
+
+  /*Esto es el footer
+----------------------------*/
+
+  .adapt {
+    min-height: calc(100vh - 0px - 190px);
+  }
+
+  .footer {
+    display: flex;
+    background-color: rgba(0, 1, 0, 0.8);
+    margin-top: 20px;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .container {
+    padding: 10px;
+  }
+
+  .footer-row {
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .footer-links {
+    padding: 0 15px;
+    width: 25%;
+  }
+
+  .footer-links h3 {
+    border-bottom: 2px solid var(--color-principal-);
+    font-size: 20px;
+    color: aliceblue;
+  }
+
+  .footer-links ul li a {
+    text-decoration: none;
+    color: rgb(0, 166, 255);
+    transition: all 0.3s ease;
+  }
+
+  .footer-links ul li a:hover {
+    color: rgb(0, 166, 255);
+    padding-left: 6px;
+  }
+
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .redes-logos {
+    font-size: 30px;
+    padding: 0 20px;
+    color: rgb(43, 14, 233);
+  }
+
+  .redes-logos a {
+    color: rgb(13, 134, 255);
+  }
+
+  .redes-logos a:hover {
+    color: rgb(0, 179, 255);
+    transition: 0.3s;
+  }
+
+  #copy {
+    color: aliceblue;
+  }
+
+  /*De aca en adelante es codigo para hacer la pag responsive
+-----------------------------------------------------------*/
+
+  @media (max-width: 1031px) {
+    nav ul {
+      font-size: 20px;
+    }
+  }
+
+  @media (max-width: 920px) {
+    nav li {
+      margin-right: 10px;
+    }
+
+    .footer-row {
+      text-align: center;
+    }
+
+    .footer-links {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+  }
+
+  @media (max-width: 790px) {
+    nav li {
+      margin-right: 1px;
+    }
+  }
+
+  @media (max-width: 720px) {
+    .barritas {
+      display: block;
+    }
+
+    nav ul {
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: rgb(128, 128, 128, 0.9);
+      top: 59px;
+      left: -100%;
+      transition: 0.5s;
+      text-align: center;
+      padding-right: 40px;
+    }
+
+    nav ul li {
+      display: block;
+      padding-bottom: 20px;
+      font-size: 20px;
+    }
+
+    nav ul li a:active {
+      background-color: rgb(48, 48, 219);
+    }
+
+    #check:checked ~ ul {
+      left: 0%;
+    }
   }
 </style>

@@ -1,11 +1,8 @@
 ---
-import NavBar from "../components/NavBar.astro";
 import Layout from "../layouts/Layout.astro";
-import Footer from "../components/Footer.astro";
 ---
 
 <Layout title="UniFinder">
-  <NavBar />
   <div class="uf-presentacion">
     <div class="uf-presentacion-second">
       <span><strong>UniFinder</strong></span>
@@ -21,271 +18,315 @@ import Footer from "../components/Footer.astro";
     <img src="/Logo-UBA.png" class="Logo-uni" />
   </div>
   <div id="Unis">
-    <div class="card mb-3" id="cards">
-      <div class="row g-0">
-        <div class="col-md-4">
-          <img
-            src="/30_rectorado-institucional.jpg"
-            class="img-fluid rounded-start"
-          />
-        </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <h5 class="card-title">UNLP</h5>
-            <p class="card-text">
-              Con más de un siglo de trayectoria, sigue siendo pionera en
-              estudios y desarrollos culturales, artísticos y científicos de
-              avanzada. Esto le ha proporcionado el prestigio que la sitúa entre
-              las principales del país, del continente americano y del mundo. La
-              docencia, la investigación y la extensión configuran los pilares
-              básicos de esta Universidad. Actualmente cuenta con 17 Facultades,
-              donde estudian 110 mil alumnos de grado
-            </p>
-            <p class="uf-info-uni">
-              <i class="fa-solid fa-location-dot"></i> Direc: La Plata Av. 7 N°
-              776
-            </p>
-            <p class="uf-info-uni" id="uf-number">
-              <i class="fa-solid fa-phone"></i> Tel.: +54 221 611-9433
-            </p>
-            <a class="btn-uni" href="/Universidades/Unlp.html">Más Info</a>
-          </div>
-        </div>
+    <div class="flex-container">
+      <div class="unis-flex" id="unis-flex-izq">
+        <img src="/30_rectorado-institucional.jpg" id="uni-img" alt="" />
+      </div>
+      <div class="unis-content" id="unis-flex-der">
+        <div id="uni-name">
+          <h2>UNLP</h2>
+        </div><h3>
+          Con más de un siglo de trayectoria, sigue siendo pionera en estudios y
+          desarrollos culturales, artísticos y científicos de avanzada. La
+          docencia, la investigación y la extensión configuran los pilares
+          básicos de esta Universidad. Actualmente cuenta con 17 Facultades,
+          donde estudian 110 mil alumnos de grado. Posicionandola entre las
+          mejores del mundo
+        </h3>
+        <p class="uf-info-uni">
+          <i class="fa-solid fa-location-dot"></i> Direc: La Plata Av. 7 N° 776
+        </p>
+        <p class="uf-info-uni">
+          <i class="fa-solid fa-phone"></i> Tel.: +54 221 611-9433
+        </p>
+        <a class="btn-uni" href="/Universidades/Unlp.html">Más Info</a>
       </div>
     </div>
-    <div class="card mb-3">
-      <div class="row g-0">
-        <div class="col-md-4">
-          <img
-            src="/Rectorado-UCALP.jpg"
-            class="img-fluid rounded-start"
-          />
-        </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <h5 class="card-title">UCALP</h5>
-            <p class="card-text">
-              En nuestra Universidad, encontrarán un espacio ideal para la
-              formación integral de nuestros alumnos dentro de los valores
-              personales según el modelo cristiano.
-            </p>
-            <p class="uf-info-uni">
-              <i class="fa-solid fa-envelope"></i> Email: info@ucalp.edu.ar
-            </p>
-            <p class="uf-info-uni">
-              <i class="fa-solid fa-location-dot"></i> Direc: Calle 13 nº 1227
-            </p>
-            <p class="uf-info-uni">
-              <i class="fa-solid fa-phone"></i> Tel.: +54 221 439 3100
-            </p>
-            <a class="btn-uni" href="/Universidades/Ucalp.html">Más Info</a>
-          </div>
-        </div>
+    <div class="flex-container">
+      <div class="unis-flex" id="unis-flex-izq">
+        <img src="/Rectorado-UCALP.jpg" id="uni-img" alt="" />
+      </div>
+      <div class="unis-content" id="unis-flex-der">
+        <div id="uni-name">
+          <h2>UCALP</h2>
+        </div><h3>
+          En nuestra Universidad, encontrarán un espacio ideal para la formación
+          integral de nuestros alumnos dentro de los valores personales según el
+          modelo cristiano.
+        </h3>
+        <p class="uf-info-uni">
+          <i class="fa-solid fa-envelope"></i> Email: info@ucalp.edu.ar
+        </p>
+        <p class="uf-info-uni">
+          <i class="fa-solid fa-location-dot"></i> Direc: Calle 13 nº 1227
+        </p>
+        <p class="uf-info-uni">
+          <i class="fa-solid fa-phone"></i> Tel.: +54 221 439 3100
+        </p>
+        <a class="btn-uni" href="/Universidades/Ucalp.html">Más Info</a>
       </div>
     </div>
-    <div class="card mb-3">
-      <div class="row g-0">
-        <div class="col-md-4">
-          <img src="/argencon_uba.jpg" class="img-fluid rounded-start" />
-        </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <h5 class="card-title">UBA</h5>
-            <p class="card-text">
-              La Universidad de Buenos Aires es una institución educativa de
-              alto prestigio académico y profesional. Ser parte de la UBA es
-              integrar una comunidad de cientos de miles estudiantes,
-              graduados/as, investigadores/as y docentes con un alto grado de
-              formación, rigurosidad y compromiso social.
-            </p>
-            <p class="uf-info-uni">
-              <i class="fa-solid fa-envelope"></i> Email:
-              mesadeayudaee@rec.uba.ar
-            </p>
-            <p class="uf-info-uni">
-              <i class="fa-solid fa-location-dot"></i> Direc: Viamonte 430,
-              C1053 CABA
-            </p>
-            <p class="uf-info-uni">
-              <i class="fa-solid fa-phone"></i> Tel.: +54 11 4510-1100
-            </p>
-            <a class="btn-uni" href="/Universidades/Uba.html">Más Info</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 
-  <div id="test-voc" class="test-voc">
-    <h2>Test Vocacional</h2>
-    <h3>
-      Para aquellos que aún no se sienten seguros de qué es lo que quieren
-      estudiar les dejamos acceso a equipos de orientación de las universidades
-      que forman parte de nuestro proyecto y además una prueba virtual gratis
-      para todos.
-    </h3>
-    <h4>
-      <a href="https://www.ucalp.edu.ar/orientacionvocacional/" target="_blank"
-        >Orientación de la Ucalp</a
-      >
-      <a
-        href="https://www.cbc.uba.ar/orientacion-vocacional/actividades-secundaria/procesos"
-        target="_blank">Orientación de la UBA</a
-      >
-      <a
-        href="https://www.thecareertest.org/?gclid=CjwKCAjw29ymBhAKEiwAHJbJ8sO6Kt6QwosO9bLEBpyHZkRYOfrQAAQ9t6t9mgOBs-vn66CLk3ZuWxoCYjMQAvD_BwE"
-        target="_blank">Test Virtual</a
-      >
-    </h4>
+    <div class="flex-container">
+      <div class="unis-flex" id="unis-flex-izq">
+        <img src="/argencon_uba.jpg" id="uni-img" alt="" />
+      </div>
+      <div class="unis-content" id="unis-flex-der">
+        <div id="uni-name">
+          <h2>UBA</h2>
+        </div><h3>
+          La Universidad de Buenos Aires es una institución educativa de alto
+          prestigio académico y profesional. Ser parte de la UBA es integrar una
+          comunidad de cientos de miles estudiantes, graduados/as,
+          investigadores/as y docentes con un alto grado de formación,
+          rigurosidad y compromiso social.
+        </h3>
+        <p class="uf-info-uni">
+          <i class="fa-solid fa-envelope"></i> Email: mesadeayudaee@rec.uba.ar
+        </p>
+        <p class="uf-info-uni">
+          <i class="fa-solid fa-location-dot"></i> Direc: Viamonte 430, C1053
+          CABA
+        </p>
+        <p class="uf-info-uni">
+          <i class="fa-solid fa-phone"></i> Tel.: +54 11 4510-1100
+        </p>
+        <a class="btn-uni" href="/Universidades/Uba.html">Más Info</a>
+      </div>
+    </div>
+
+    <div id="test-voc" class="test-voc">
+      <h2>Test Vocacional</h2>
+      <h3>
+        Para aquellos que aún no se sienten seguros de qué es lo que quieren
+        estudiar les dejamos acceso a equipos de orientación de las
+        universidades que forman parte de nuestro proyecto y además una prueba
+        virtual gratis para todos.
+      </h3>
+      <h4>
+        <a
+          href="https://www.ucalp.edu.ar/orientacionvocacional/"
+          target="_blank">Orientación de la Ucalp</a
+        >
+        <a
+          href="https://www.cbc.uba.ar/orientacion-vocacional/actividades-secundaria/procesos"
+          target="_blank">Orientación de la UBA</a
+        >
+        <a
+          href="https://www.thecareertest.org/?gclid=CjwKCAjw29ymBhAKEiwAHJbJ8sO6Kt6QwosO9bLEBpyHZkRYOfrQAAQ9t6t9mgOBs-vn66CLk3ZuWxoCYjMQAvD_BwE"
+          target="_blank">Test Virtual</a
+        >
+      </h4>
+    </div>
   </div>
-  <Footer />
 </Layout>
 
 <style>
-  .uf-presentacion {
-    margin-top: 60px;
-    width: 100%;
-    height: 100vh;
-    background-image: url(/Fondo.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .uf-presentacion span {
-    text-transform: uppercase;
-    color: rgb(255, 255, 255);
-    font-size: 8rem;
-    letter-spacing: -3px;
-    margin-bottom: 100px;
-    color: rgb(255, 255, 255);
-    -webkit-text-stroke: 0.1px rgb(1, 30, 117); /* para Chrome y Safari */
-    text-stroke: 1px rgb(1, 30, 117); /* para el resto de navegadores */
-    border-bottom: 6px solid rgb(1, 30, 117);
-  }
-
-  .uf-presentacion h6 {
-    font-size: 20px;
-  }
-
-  .uf-presentacion-unis {
-    width: 100%;
-    text-align: center;
-  }
-
-  .uf-presentacion-unis h3 {
-    text-align: center;
-    margin-top: 10px;
-  }
-
-  .Logo-uni {
-    padding-right: 10px;
-    padding-left: 10px;
-    margin: auto;
-    width: 180px;
-  }
-
-  .card .mb-3 {
-    width: 800px;
-  }
-  .col-md-8 {
-    background-color: rgb(3, 3, 117);
-    color: aliceblue;
-  }
-
-  .card-title {
-    text-align: center;
-    font-size: 40px;
-  }
-
-  .card-text {
-    font-size: 25px;
-  }
-
-  #cards {
-    margin-top: 60px;
-  }
-
-  #uf-info-uni {
-    font-size: 20px;
-  }
-
-  .btn-uni {
-    padding: 15px 20px;
-    font-size: 17px;
-    border-radius: 5px;
-    border: none;
-    text-decoration: none;
-    color: aliceblue;
-    background-color: rgb(0, 145, 255);
-  }
-
-  .btn-uni:hover {
-    cursor: pointer;
-    background-color: rgb(0, 115, 255);
-  }
-
-  .test-voc {
-    text-align: center;
-  }
-
-  .test-voc a {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  @media screen and (max-width: 720px) {
-    .card-text,
-    .card-titile {
-      font-size: 15px;
-    }
-    .col-md-4 {
-      height: 400px;
-      width: 400px;
-    }
-    .cold-md-8 {
-      width: 400px;
+    .flex-container {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      margin-bottom: 30px;
     }
 
-    .uf-presentacion span {
-      color: rgb(38, 73, 245);
-      border-bottom: 0px;
-      -webkit-text-stroke: rgb(6, 187, 237); /* para Chrome y Safari */
-      text-stroke: rgb(6, 187, 237);
-    }
-  }
+    .unis-flex {
+      border: 0.7px solid rgb(31, 30, 30);
 
-  @media screen and (max-width: 620px) {
-    .uf-presentacion span {
-      font-size: 5rem;
+      margin: 0 auto;
+      height: 506px;
+      /*     border: 2px solid black;
+   */
+    }
+
+    .unis-content {
+      height: 100%;
+    }
+
+    .unis-flex img {
+      max-width: 100%;
+      height: 100%;
+      width: auto;
+    }
+
+    #unis-flex-izq {
+      margin-top: 60px;
+    }
+
+    #unis-flex-der {
+      padding-left: 20px;
+      color: aliceblue;
+      margin-top: 60px;
+      flex-grow: calc(1);
+      width: 40%;
+      background: rgb(3, 3, 117);
+      height: auto;
+      /*     color: #fff;
+ */
+    }
+
+    #unis-flex-der h3 {
+      margin-bottom: 10px;
+      font-size: 25px;
+      font-size: 150%;
+    }
+
+    #unis-flex-der h2 {
+      margin-top: 1rem;
+      text-align: center;
+      color: aliceblue;
+      font-size: 40px;
     }
 
     .uf-presentacion {
-      height: 500px;
+      margin-top: 60px;
+      width: 100%;
+      height: 100vh;
+      background-image: url(/Fondo.jpeg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .uf-presentacion span {
+      text-transform: uppercase;
+      color: rgb(255, 255, 255);
+      font-size: 8rem;
+      letter-spacing: -3px;
+      margin-bottom: 100px;
+      color: rgb(255, 255, 255);
+      -webkit-text-stroke: 0.1px rgb(1, 30, 117); /* para Chrome y Safari */
+      text-stroke: 1px rgb(1, 30, 117); /* para el resto de navegadores */
+      border-bottom: 6px solid rgb(1, 30, 117);
+    }
+
+    .uf-presentacion h6 {
+      font-size: 20px;
+    }
+
+    .uf-presentacion-unis {
+      width: 100%;
+      text-align: center;
+    }
+
+    .uf-presentacion-unis h3 {
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    .Logo-uni {
+      padding-right: 10px;
+      padding-left: 10px;
+      margin: auto;
+      width: 180px;
+    }
+
+    #uf-info-uni {
+      font-size: 20px;
+    }
+
+    .btn-uni {
+      padding: 15px 20px;
+      font-size: 17px;
+      border-radius: 5px;
+      border: none;
+      text-decoration: none;
+      color: aliceblue;
+      background-color: rgb(0, 145, 255);
+      margin-top: 20px;
+    }
+
+    .btn-uni:hover {
+      cursor: pointer;
+      background-color: rgb(0, 115, 255);
+    }
+
+    .test-voc {
+      text-align: center;
     }
 
     .test-voc a {
-      display: block;
-    }
-  }
-
-  @media screen and (max-width: 385px) {
-    .uf-presentacion {
-      height: 500px;
+      padding-left: 10px;
+      padding-right: 10px;
     }
 
-    .uf-presentacion span {
-      font-size: 4rem;
-    }
-  }
+    /* Apartir de aca el codigo es para la parte responsive */
+    @media screen and (max-width: 1050px) {
+      #unis-flex-der h3 {
+        font-size: 20px;
+      }
+      .unis-flex img {
+        width: 400px;
+      }
 
-  @media screen and (max-width: 363px) {
-    .Logo-uni {
-      padding-right: 0;
-      padding-left: 0;
-      margin-top: 10px;
+      #uni-img {
+        height: auto;
+      }
     }
-  }
+
+    @media screen and (max-width: 732px) {
+      #unis-flex-der {
+        padding: 5px;
+        height: auto;
+      }
+    }
+
+    @media screen and (max-width: 720px) {
+      #unis-flex-der h3 {
+        font-size: 15px;
+      }
+
+      .uf-presentacion span {
+        color: rgb(38, 73, 245);
+        border-bottom: 0px;
+        -webkit-text-stroke: rgb(6, 187, 237); /* para Chrome y Safari */
+        text-stroke: rgb(6, 187, 237);
+      }
+    }
+    @media screen and (max-width: 668px) {
+      #unis-flex-der {
+        height: 400px;
+      }
+    }
+    @media screen and (max-width: 620px) {
+      .uf-presentacion span {
+        font-size: 5rem;
+      }
+
+      .uf-presentacion {
+        height: 500px;
+      }
+
+      .test-voc a {
+        display: block;
+      }
+    }
+
+    @media screen and (max-width: 550px) {
+      .unis-flex img {
+        width: 400px;
+      }
+
+      #uni-img {
+        height: auto;
+      }
+    }
+    @media screen and (max-width: 385px) {
+      .uf-presentacion {
+        height: 500px;
+      }
+      .uf-presentacion span {
+        font-size: 4rem;
+      }
+    }
+
+    @media screen and (max-width: 363px) {
+      .Logo-uni {
+        padding-right: 0;
+        padding-left: 0;
+        margin-top: 10px;
+      }
+    }
 </style>
+
