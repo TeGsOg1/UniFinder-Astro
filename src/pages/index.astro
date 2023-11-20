@@ -39,7 +39,7 @@ import Layout from "../layouts/Layout.astro";
         <p class="uf-info-uni">
           <i class="fa-solid fa-phone"></i> Tel.: +54 221 611-9433
         </p>
-        <a class="btn-uni" href="/Universidades/Unlp.html">Más Info</a>
+        <a class="btn-uni" href="/Universidades/Unlp">Más Info</a>
       </div>
     </div>
     <div class="flex-container">
@@ -63,7 +63,7 @@ import Layout from "../layouts/Layout.astro";
         <p class="uf-info-uni">
           <i class="fa-solid fa-phone"></i> Tel.: +54 221 439 3100
         </p>
-        <a class="btn-uni" href="/Universidades/Ucalp.html">Más Info</a>
+        <a class="btn-uni" href="/Universidades/Ucalp">Más Info</a>
       </div>
     </div>
 
@@ -91,7 +91,7 @@ import Layout from "../layouts/Layout.astro";
         <p class="uf-info-uni">
           <i class="fa-solid fa-phone"></i> Tel.: +54 11 4510-1100
         </p>
-        <a class="btn-uni" href="/Universidades/Uba.html">Más Info</a>
+        <a class="btn-uni" href="/Universidades/Uba">Más Info</a>
       </div>
     </div>
 
@@ -148,14 +148,9 @@ import Layout from "../layouts/Layout.astro";
       width: auto;
     }
 
-    #unis-flex-izq {
-      margin-top: 60px;
-    }
-
     #unis-flex-der {
       padding-left: 20px;
       color: aliceblue;
-      margin-top: 60px;
       flex-grow: calc(1);
       width: 40%;
       background: rgb(3, 3, 117);
@@ -220,6 +215,7 @@ import Layout from "../layouts/Layout.astro";
       padding-left: 10px;
       margin: auto;
       width: 180px;
+      margin-bottom:30px;
     }
 
     #uf-info-uni {
@@ -256,6 +252,7 @@ import Layout from "../layouts/Layout.astro";
       #unis-flex-der h3 {
         font-size: 20px;
       }
+      
       .unis-flex img {
         width: 400px;
       }
@@ -278,17 +275,21 @@ import Layout from "../layouts/Layout.astro";
       }
 
       .uf-presentacion span {
+        font-size: 6rem;
         color: rgb(38, 73, 245);
         border-bottom: 0px;
         -webkit-text-stroke: rgb(6, 187, 237); /* para Chrome y Safari */
         text-stroke: rgb(6, 187, 237);
       }
     }
+
     @media screen and (max-width: 668px) {
       #unis-flex-der {
         height: 400px;
+        margin-top: 0px;
       }
     }
+
     @media screen and (max-width: 620px) {
       .uf-presentacion span {
         font-size: 5rem;
@@ -300,6 +301,12 @@ import Layout from "../layouts/Layout.astro";
 
       .test-voc a {
         display: block;
+      }
+    }
+
+    @media screen and (max-width: 410px) {
+      .uf-presentacion span {
+        font-size: 4rem;
       }
     }
 
@@ -326,6 +333,12 @@ import Layout from "../layouts/Layout.astro";
         padding-right: 0;
         padding-left: 0;
         margin-top: 10px;
+      }
+    }
+
+    @media screen and (max-width: 325px) {
+      .uf-presentacion span {
+        font-size: 3.8rem;
       }
     }
 </style>
