@@ -1,8 +1,428 @@
 ---
+import UniCard from "../../components/Uni-card.astro";
 import Layout from "../../layouts/Layout.astro";
-
 ---
 
 <Layout title="UF-UBA">
-
+      <UniCard img="/argencon_uba.jpg" Uni="UBA", estado:>
+        La Universidad de Buenos Aires (UBA) es una universidad pública argentina con sede en la Ciudad de Buenos
+        Aires. Fue fundada el 12 de agosto de 1821 por el gobernador de la provincia de Buenos Aires, Martín Rodríguez,
+        y su ministro de gobierno, Bernardino Rivadavia. La UBA es la mayor universidad de Argentina y está considerada
+        uno de los centros de estudios más prestigiosos de América y del mundo.
+        Está conformada por trece facultades, seis establecimientos de educación secundaria,​ ocho centros
+        universitarios regionales, el Centro Cultural Ricardo Rojas, la Editorial Universitaria de Buenos Aires, el
+        Cine Cosmos, dieciocho museos y cinco unidades asistenciales
+        Cuenta con un total de ochenta y cinco carreras de grado y 116 títulos derivados de aquellas (que constituyen un
+        tercer nivel en la enseñanza), además de varias carreras de posgrado que son de cuarto nivel (especializaciones
+        y maestrías), de quinto nivel (doctorados) y de sexto nivel (posdoctorados)
+      </UniCard>
+      <div class="categ-container">
+        <a href="/Universidades/Becas/becas-uba.html" class="btn-categ-a">
+          <div class="btn-categ">Becas</div>
+        </a>
+        <a href="/Universidades/Tutorías/tutorias-uba.html" class="btn-categ-a">
+          <div class="btn-categ">Talleres</div>
+        </a>
+        <a href="/Universidades/RI/ri-uba.html" class="btn-categ-a">
+          <div class="btn-categ">Voluntariados</div>
+        </a>
+        <a href="/Universidades/Deportes/deportes-uba.html" class="btn-categ-a">
+          <div class="btn-categ">Deportes</div>
+        </a>
+      </div>
+      <div class="facus-container">
+        <div class="facus-flex" id="facus-flex-izq">
+          <h1><strong>Facultades</strong></h1>
+          <h3 id="inv-facu"> Te invitamos a ver cada una de las <br>
+            cuales conforman a esta universidad junto con sus respectivas <br>
+            carreras y un mapa que señala cada facultad.
+          </h3>
+        </div>
+        <div class="facus-flex" id="facus-flex-der">
+          <h2>Mapa de facultades</h2>
+          <iframe id="map"
+            src="https://www.google.com/maps/d/u/0/embed?mid=1FwENuNI9UCW4JjrcF_dLHlCB-OuAgFo&ehbc=2E312F&noprof=1"></iframe>
+        </div>
+      </div>
+      <div class="facultades">
+        <div class="facus-col">
+          <ul>
+            <h2>Facultad de Agronomía</h2>
+            <h4 id="email-uni"> <svg id="mail-icon" xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-mail-filled" width="44" height="44" viewBox="0 0 24 24"
+                stroke-width="1.5" stroke="#00abfb" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M22 7.535v9.465a3 3 0 0 1 -2.824 2.995l-.176 .005h-14a3 3 0 0 1 -2.995 -2.824l-.005 -.176v-9.465l9.445 6.297l.116 .066a1 1 0 0 0 .878 0l.116 -.066l9.445 -6.297z"
+                  stroke-width="0" fill="currentColor" />
+                <path
+                  d="M19 4c1.08 0 2.027 .57 2.555 1.427l-9.555 6.37l-9.555 -6.37a2.999 2.999 0 0 1 2.354 -1.42l.201 -.007h14z"
+                  stroke-width="0" fill="currentColor" />
+              </svg> diragron@agro.uba.ar</h4>
+            <h3>Carreras de grado y tecnicaturas</h3>
+            <li>
+              Carrera de Agronomía (5 años y medio)
+            </li>
+            <li>
+              Carrera de Planificación y Diseño del Paisaje (5 años)
+            </li>
+            <li>
+              Licenciatura en Economía y Administración Agrarias (5 años)
+            </li>
+            <li>
+              Licenciatura en Gestión de Agroalimentos (5 años)
+            </li>
+            <li>
+              Licenciatura en Ciencias Ambientales (6 años)
+            </li>
+            <li>
+              Profesorado en Ciencias Ambientales (5 años)
+            </li>
+            <li>
+              Tecnicatura en Floricultura (3 años)
+            </li>
+            <li>
+              Tecnicatura en Jardinería (3 años)
+            </li>
+            <li>
+              Tecnicatura en Martillero y Corredor Público Rural (3 años)
+            </li>
+            <li>
+              Tecnicatura en Producción Vegetal Orgánica (3 años)
+            </li>
+            <li>
+              Tecnicatura en Turismo Rural (3 años)
+            </li>
+          </ul>
+        </div>
+        <div class="facus-col">
+          <ul>
+            <h2>Facultad de Arquitectura, Diseño y Urbanismo</h2>
+            <h3>Carreras de grado</h3>
+            <li>
+              Carrera de Arquitectura (5 años)
+            </li>
+            <li>
+              Carrera de Diseño Gráfico (5 años)
+            </li>
+            <li>
+              Carrera de Diseño Industrial (6 años)
+            </li>
+            <li>
+              Carrera de Diseño de Indumentaria (5 años)
+            </li>
+            <li>
+              Carrera de Diseño Textil (5 años)
+            </li>
+            <li>
+              Carrera de Diseño de Imagen y Sonido (4 años)
+            </li>
+            <li>
+              Carrera de Diseño y Planificación del Paisaje (4 años)
+            </li>
+          </ul>
+        </div>
+        <div class="facus-col">
+          <ul>
+            <h2>Facultad de Ciencias Económicas</h2>
+            <h4 id="email-uni"> <svg id="mail-icon" xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-mail-filled" width="44" height="44" viewBox="0 0 24 24"
+                stroke-width="1.5" stroke="#00abfb" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M22 7.535v9.465a3 3 0 0 1 -2.824 2.995l-.176 .005h-14a3 3 0 0 1 -2.995 -2.824l-.005 -.176v-9.465l9.445 6.297l.116 .066a1 1 0 0 0 .878 0l.116 -.066l9.445 -6.297z"
+                  stroke-width="0" fill="currentColor" />
+                <path
+                  d="M19 4c1.08 0 2.027 .57 2.555 1.427l-9.555 6.37l-9.555 -6.37a2.999 2.999 0 0 1 2.354 -1.42l.201 -.007h14z"
+                  stroke-width="0" fill="currentColor" />
+              </svg> consultas@fce.uba.ar</h4>
+            <h3>Carreras de grado</h3>
+            <li>
+              Carrera de Contador Publico (5 años y medio)
+            </li>
+            <li>
+              Carrera de Actuario (5 años y medio)
+            </li>
+            <li>
+              Licenciatura en Economía (5 años y medio)
+            </li>
+            <li>
+              Licenciatura en Administración (5 años y medio)
+            </li>
+            <li>
+              Licenciaturas en Sistemas de Información de las Organizaciones (5 años y medio)
+            </li>
+          </ul>
+        </div>
+        <div class="facus-col">
+          <ul>
+            <h2>Facultad de Ciencias Exactas y Naturales</h2>
+            <h3>Carreras de grado</h3>
+            <li>
+              Carrera de Ciencias Biológicas (5 años)
+            </li>
+            <li>
+              Carrera de Ciencias de Datos (5 años y medio)
+            </li>
+            <li>
+              Carrera de Ciencias de la Atmósfera (5 años)
+            </li>
+            <li>
+              Carrera de Ciencias de la Computación (4 años)
+            </li>
+            <li>
+              Carrera de Ciencias Físicas (5 años)
+            </li>
+            <li>
+              Carrera de Ciencias Geológicas (5 años)
+            </li>
+            <li>
+              Carrera de Ciencias Matemáticas (5 años)
+            </li>
+            <li>
+              Carrera de Ciencias Químicas (6 años)
+            </li>
+            <li>
+              Carrera de Ciencia y Tecnología de Alimentos (5 años)
+            </li>
+            <li>
+              Carrera de Oceanografía (6 años)
+            </li>
+            <li>
+              Carrera de Paleontología (5 años)
+            </li>
+            <h3>Profesorados</h3>
+            <li>
+              Profesorado de Ciencias de la Atmósfera
+            </li>
+            <li>
+              Profesorado de Biología
+            </li>
+            <li>
+              Profesorado de Computación
+            </li>
+            <li>
+              Profesorado de Física
+            </li>
+            <li>
+              Profesorado de Geología
+            </li>
+            <li>
+              Profesorado de Matemática
+            </li>
+            <li>
+              Profesorado de Química
+            </li>
+          </ul>
 </Layout>
+
+<style>
+
+    .categ-container {
+        margin-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-around;
+    }
+    
+    .btn-categ-a {
+        text-decoration: none;
+        height: auto;
+    }
+    
+    .btn-categ {
+        font-size: 1.7rem;
+        color: #fff;
+        text-align: center;
+        background-color: rgb(34, 188, 254);
+        width: 300px;
+        height: 50px;
+        margin-top: 10px;
+        border-radius: 5px;
+        transition: all ease .3s;
+    }
+    
+    .btn-categ:hover {
+        background-color: rgb(34, 144, 254);
+        transform: scale(1.05);
+    }
+    
+    .facus-container {
+        background: linear-gradient( to right, rgb(0, 200, 255), rgb(0, 140, 255), rgb(0, 89, 255));
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 40px;
+        text-align: center;
+        width: 100%;
+        height: 600px;
+        margin-bottom: 100px;
+    }
+    
+    #facus-flex-der {
+        width: auto;
+        width: 700px;
+        margin-top: 60px;
+        padding-left: 20px;
+        margin-top: 60px;
+        flex-grow: calc(1);
+        width: 40%;
+        height: auto;
+        margin-right: 20px;
+    
+    }
+    
+    
+    .facus-flex h1{
+        margin-top: 50px;
+        font-size: 2.7rem;
+    }
+    
+    #inv-facu{
+        margin-top: 110px;
+        font-size: 2.3rem;
+    }
+    
+    .facultades {
+        padding: 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+    }
+    
+    .facus-col {
+        background-color: rgb(230, 230, 230);
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.395);
+    }
+    
+    .facultades ul h2 {
+        text-decoration: underline rgb(22, 47, 186);
+        margin-bottom: 30px;
+        margin-top: 20px;
+    }
+    
+    .facultades ul h3 {
+        margin-left: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-decoration: underline pink;
+    }
+    
+    #email-uni {
+        text-decoration: underline;
+    }
+    
+    .facultades .facus-col ul li {
+        margin-left: 90px;
+        font-size: 1.2rem;
+    }
+    
+    .record {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 10px;
+    }
+    
+    #map {
+        width: 90%;
+        height: 450px;
+    }
+    
+    #mail-icon {
+        scale: .5;
+    }
+    
+    span {
+        word-wrap: break-word;
+    }
+    
+    @media screen and (max-width:1703px) {
+        #facus-flex-izq {
+            width: 600px;
+        }
+    }
+    
+    @media screen and (max-width:1500px) {
+        #facus-flex-izq {
+            width: 500px;
+        }
+    }
+    
+    @media screen and (max-width:1400px) {
+        .facus-col {
+            width: 48%;
+        }
+    }
+    
+    
+    @media screen and (max-width:1300px) {
+        #facus-flex-izq {
+            width: 400px;
+        }
+    }
+    
+    @media screen and (max-width:1000px) {
+        .facus-col {
+            width: 100%;
+        }
+    }
+    
+    @media screen and (max-width:940px) {
+        .facus-container {
+            height: 970px;
+        }
+    
+        #facus-flex-izq {
+            width: 100%;
+        }
+    
+        #facus-flex-der {
+            justify-content: center;
+            margin-right: 20px;
+            margin-top: 0;
+        }
+    
+        #inv-facu {
+            margin-top: 50px;
+        }
+    
+    }
+    
+    @media screen and (max-width:929px) {
+        .facus-flex {
+            height: auto;
+        }
+    }
+    
+    @media screen and (max-width:627px) {
+    
+    
+        #inv-facu {
+            font-size: 1.6rem;
+        }
+    
+        #facus-flex-der {
+            margin-top: 10px;
+        }
+    }
+    
+    
+    
+    @media screen and (max-width:550px) {
+        .btn-categ {
+            font-size: 1.4rem;
+            width: 270px;
+            padding-top: 5px;
+        }
+        .btn-categ:hover {
+            background-color: rgb(34, 188, 254);
+            transform: scale(1);
+        }
+        .btn-categ:active {
+            background-color: rgb(34, 144, 254);
+            transform: scale(1.05);
+        }
+    }
+</style>
