@@ -2,13 +2,11 @@
 interface Props {
     Uni: string;
     img: string;
-    estadotxt: boolean;
-    estado: boolean;
+    estadotxt: string;
+    estado: string;
 }
 
-const { Uni, img } = Astro.props
-const estado = 'estado' ? '/Publica.png' : '/Privado.png'
-const estadotxt = estado ? 'Publica' : 'Privada'
+const { Uni, img, estado, estadotxt } = Astro.props
 
 ---
 
@@ -26,7 +24,7 @@ const estadotxt = estado ? 'Publica' : 'Privada'
       <br>
       <div class="priv-pub">
         <img src={ estado } id="priv-pub-img">
-        <h5 id="priv-pub-txt">{ estadotxt }</h5>
+        <h5 id="priv-pub-txt">Universidad { estadotxt }</h5>
       </div>
     </div>
 </div>
@@ -60,10 +58,11 @@ const estadotxt = estado ? 'Publica' : 'Privada'
     width: 40%;
     background: rgb(3, 3, 117);
     height: auto;
+    padding: 10px;
   }
 
   #unis-flex-der h4 {
-    font-size: 150%;
+    font-size: 1.5rem;
     margin: 5px;
   }
 
@@ -79,6 +78,7 @@ const estadotxt = estado ? 'Publica' : 'Privada'
   #priv-pub-img {
     width: 20px;
     height: 20px;
+    margin-right: 5px;
   }
 
   #unis-flex-der h2 {
@@ -109,12 +109,42 @@ const estadotxt = estado ? 'Publica' : 'Privada'
 
   #uni-img {
     height: 504px;
+    min-width: 200px;
+  }
+
+  /* Media Querys */
+
+  @media screen and (max-width: 1200px){
+    #unis-flex-der h4 {
+      font-size: 1.3rem;
+    }
+  }
+
+  @media screen and (max-width: 1027px){
+    #unis-flex-der h4 {
+      font-size: 1.1rem;
+    }
+  }
+
+  @media screen and (max-width: 950px) {
+    #unis-flex-der {
+      height: auto;
+    }
+
+    #unis-flex-der h4 {
+      font-size: 1.1rem;
+    }
   }
 
   @media screen and (max-width: 929px) {
     #unis-flex-der {
-      margin-top: 0;
       height: auto;
+    }
+  }
+
+  @media screen and (max-width: 752px){
+    #unis-flex-der {
+      margin-top: 0px;
     }
   }
 
@@ -125,11 +155,6 @@ const estadotxt = estado ? 'Publica' : 'Privada'
 
     #unis-flex-izq {
       height: auto;
-    }
-
-    #unis-flex-der h4 {
-      font-size: 110%;
-      margin: 5px;
     }
 
     #priv-pub-txt {
