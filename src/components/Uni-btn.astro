@@ -1,0 +1,72 @@
+---
+interface Props {
+    uni: string;
+    btn3: string;
+    btn4: string;
+}
+
+const { uni, btn3, btn4 } = Astro.props
+---
+
+<section class="categ-container">
+    <a href={`/Universidades/Becas/becas-${uni}`} class="btn-categ-a">
+      Becas
+    </a>
+    <a href={`/Universidades/Deportes/deportes-${uni}`} class="btn-categ-a">
+      Deportes
+    </a>
+    <a href={`/Universidades/Tuto-tall/tuto-tall-${uni}`} class="btn-categ-a">
+      {btn3}
+    </a>
+    <a href={`/Universidades/RI-Vol/ri-vol-${uni}`} class="btn-categ-a">
+      {btn4}
+    </a>
+</section>
+
+<style>
+    .categ-container {
+        margin-top: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-around;
+        margin-bottom: 50px;
+    }
+    
+    .btn-categ-a {
+        text-decoration: none;
+        height: auto;
+        font-size: 1.7rem;
+        color: #fff;
+        text-align: center;
+        background-color: rgb(34, 151, 254);
+        width: 300px;
+        height: 50px;
+        margin-top: 10px;
+        border-radius: 5px;
+        transition: all ease .3s;
+    }
+
+    .btn-categ-a:hover {
+        background-color: rgb(34, 96, 254);
+        transform: scale(1.05);
+    }
+
+    /* Media Querys */
+
+    @media screen and (max-width:550px) {
+        .btn-categ {
+            font-size: 1.4rem;
+            width: 270px;
+            padding-top: 5px;
+        }
+        .btn-categ:hover {
+            background-color: rgb(34, 151, 254);
+            transform: scale(1);
+        }
+        .btn-categ:active {
+            background-color: rgb(34, 188, 254);
+            transform: scale(1.05);
+        }
+    }
+</style>
