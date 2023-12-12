@@ -1,0 +1,63 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+---
+
+<Layout title="Error 404">
+    <div><h1>¡Lo sentimos!</h1>
+    <h2>Esta página no existe</h2>
+    <span>404!</span>
+    </div>
+</Layout>
+
+<style>
+    div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: auto;
+        height: calc(100vh - 100px);
+    }
+
+    h1 {
+        font-size: 5rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    span {
+        font-size: 7rem;
+    }
+
+    @media (width < 600px) {
+        h1 {
+        font-size: 4rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    span {
+        font-size: 6rem;
+    }
+    }
+
+    @media (width < 300px) {
+        h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    span {
+        font-size: 4rem;
+    }
+    }
+</style>
