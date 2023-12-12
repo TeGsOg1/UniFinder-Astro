@@ -360,12 +360,16 @@ import UniBtn from "../../components/Uni-btn.astro";
     grid-row-end: 3;
   } */
 
-  @media (width < 430px) {
+  @media (width < 460px) {
     .facus-container {
       grid-template-columns: 1fr;
     }
     .facus-container section h2 {
-    height: auto;
-  }
+      height: auto;
+      font-size: 1.3rem;
+    }
+    section ul {
+      font-size: 1rem;
+    }
   }
 </style>
