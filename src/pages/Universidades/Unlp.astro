@@ -6,19 +6,366 @@ import UniBtn from "../../components/Uni-btn.astro";
 ---
 
 <Layout title="UF-UNLP">
-    <UniCard img="/rectorado-institucional.jpg" Uni="UNLP" estado="/Publica.png" estadotxt="Publica" >
-        La Universidad Nacional de La Plata, fue fundada en 1905 por el doctor Joaquín Víctor González.
-        <br>
-        <br>
-        La oferta académica de la UNLP incluye 111 carreras de grado -157 títulos- y 170 de posgrado (el 85% están
-        acreditadas o en trámite, por la Comisión Nacional de Evaluación y Acreditación Universitaria –CONEAU-), además
-        de unos 500 cursos de posgrado. Entre carreras y cursos recibe unos 22.000 alumnos de posgrado. Además cuenta
-        con 100 cátedras libres dependientes de la Presidencia, que se suman a las muchas que funcionan en las
-        Facultades.
-      </UniCard>
-      <UniMap map="https://www.google.com/maps/d/u/0/embed?mid=1l6bnbqLajZtq7SPE3EteS6qrIsux_Xw&ehbc=2E312F&noprof=1"/>
-      <UniBtn btn3="Tutorías" btn4="Rel. Inter" uni="unlp"/>
+  <UniCard
+    img="/rectorado-institucional.jpg"
+    Uni="UNLP"
+    estado="/Publica.png"
+    estadotxt="Publica"
+  >
+    La Universidad Nacional de La Plata, fue fundada en 1905 por el doctor
+    Joaquín Víctor González.
+    <br />
+    <br />
+     La oferta académica de la UNLP incluye 111 carreras de grado -157 títulos-
+    y 170 de posgrado (el 85% están acreditadas o en trámite, por la Comisión
+    Nacional de Evaluación y Acreditación Universitaria –CONEAU-), además de
+    unos 500 cursos de posgrado. Entre carreras y cursos recibe unos 22.000
+    alumnos de posgrado. Además cuenta con 100 cátedras libres dependientes de
+    la Presidencia, que se suman a las muchas que funcionan en las Facultades.
+  </UniCard>
+  <UniMap
+    map="https://www.google.com/maps/d/u/0/embed?mid=1l6bnbqLajZtq7SPE3EteS6qrIsux_Xw&ehbc=2E312F&noprof=1"
+  />
+  <UniBtn btn3="Tutorías" btn4="Rel. Inter" uni="unlp" />
+
+  <div class="facus">
+    <h1><strong>Facultades</strong></h1>
+
+    <div class="facus-container">
+
+      <section>
+        <div><h2>Facultad de Artes</h2></div>
+        <ul>
+          <li>Licenciatura en Diseño en Comunicación Visual (5 años)</li>
+          <li>Profesorado en Diseño en Comunicación Visual (5 años)</li>
+          <li>Tecnicatura Universitaria en Producción Gráfica (3 años)</li>
+          <li>Licenciatura en Diseño Multimedial (5 años)</li>
+          <li>Profesorado en Diseño Multimedial (5 años)</li>
+          <li>Diseño Industrial (5 años)</li>
+          <li>Profesorado en Diseño Industrial (5 años)</li>
+          <li>Licenciatura en Música (5 años)</li>
+          <li>Profesorado en Música (5 años)</li>
+          <li>Licenciatura en Artes Plásticas (5 años)</li>
+          <li>Profesorado en Artes Plásticas (5 años)</li>
+          <li>Licenciatura en Artes Audiovisuales (5 años)</li>
+          <li>Profesorado en Artes Audiovisuales (5 años)</li>
+          <li>
+            Licenciatura en Historia de las Artes, Orientación Artes Visuales (5
+            años)
+          </li>
+          <li>
+            Profesorado en Historia de las Artes con orientación en Artes
+            Visuales (5 años)
+          </li>
+          <li>Tecnicatura en Sonido y Grabación (3 años)</li>
+          <li>Músico Popular (3 años)</li>
+          <li>Tecnicatura Universitaria en Fotografía (3 años)</li>
+          <li>Tecnicatura Universitaria en Artes Audiovisuales (3 años)</li>
+        </ul>
+      </section>
+
+      <section>
+        <div><h2>Facultad de Ciencias Agrarias y Forestales</h2></div>
+        <ul>
+          <li>Ingeniería Agronómica (5 años y medio)</li>
+          <li>Ingeniería Forestal (5 años y medio)</li>
+          <li>Tecnicatura Universitaria en Agroecología (2 años y medio)</li>
+          <li>
+            Tecnicatura Universitaria en Cultivos Protegidos y Ambientes
+            Controlados (2 años y medio)
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <div><h2>Facultad de Ciencias Astronómicas y Geofísicas</h2></div>
+        <ul>
+          <li>Geofísica (5 años)</li>
+          <li>Licenciatura en Astronomía (5 años)</li>
+          <li>
+            Tecnicatura y Licenciatura en Meteorología y Ciencias de la
+            Atmósfera (5 años)
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <div><h2>Facultad de Ciencias Económicas</h2></div>
+        <ul>
+          <li>Contador Público (5 años)</li>
+          <li>Licenciatura en Economía (5 años)</li>
+          <li>Licenciatura en Administración (5 años)</li>
+          <li>Ciencia de Datos en Organizaciones (4 años)</li>
+        </ul>
+      </section>
+      <section>
+        <div><h2>Facultad de Ciencias Exactas</h2></div>
+        <ul>
+          <li>Licenciatura en Ciencias Biológicas (5 años)</li>
+          <li>Profesorado en Ciencias Biológicas (5 años)</li>
+          <li>Licenciatura en Física (5 años)</li>
+          <li>Profesorado en Física (5 años)</li>
+          <li>Licenciatura en Matemática (5 años)</li>
+          <li>Profesorado en Matemática (5 años)</li>
+          <li>Licenciatura en Química (5 años)</li>
+          <li>Profesorado en Química (5 años)</li>
+          <li>Tecnicatura Universitaria en Química (3 años)</li>
+          <li>Tecnicatura Universitaria en Biotecnología (3 años)</li>
+          <li>Tecnicatura Universitaria en Gestión Ambiental (3 años)</li>
+        </ul>
+      </section>
+
+      <section>
+        <div><h2>Facultad de Ciencias Jurídicas y Sociales</h2></div>
+        <ul>
+          <li>Abogacía (5 años)</li>
+          <li>Procuración (4 años)</li>
+          <li>Licenciatura en Relaciones Internacionales (5 años)</li>
+          <li>Licenciatura en Sociología (5 años)</li>
+          <li>Licenciatura en Trabajo Social (5 años)</li>
+          <li>Licenciatura en Turismo (4 años)</li>
+        </ul>
+      </section>
+
+      <section>
+        <div><h2>Facultad de Ciencias Médicas</h2></div>
+        <ul>
+          <li>Medicina (6 años)</li>
+          <li>Enfermería (4 años)</li>
+          <li>Licenciatura en Enfermería (5 años)</li>
+          <li>Licenciatura en Obstetricia (4 años)</li>
+          <li>Licenciatura en Nutrición (5 años)</li>
+          <li>Licenciatura en Kinesiología y Fisiatría (5 años)</li>
+          <li>Tecnicatura Universitaria en Anestesia (3 años)</li>
+          <li>Tecnicatura Universitaria en Esterilización (3 años)</li>
+          <li>Tecnicatura Universitaria en Hemoterapia (3 años)</li>
+          <li>
+            Tecnicatura Universitaria en Instrumentación Quirúrgica (3 años)
+          </li>
+          <li>
+            Tecnicatura Universitaria en Producción de Bioimágenes (3 años)
+          </li>
+          <li>Tecnicatura Universitaria en Prácticas Cardiológicas (3 años)</li>
+        </ul>
+      </section>
+
+      <section>
+        <div><h2>Facultad de Ciencias Naturales y Museo</h2></div>
+        <ul>
+          <li>Licenciatura en Antropología (5 años)</li>
+          <li>Profesorado en Antropología (5 años)</li>
+          <li>Licenciatura en Ciencias Biológicas (5 años)</li>
+          <li>Profesorado en Ciencias Biológicas (5 años)</li>
+          <li>Licenciatura en Geología (5 años)</li>
+          <li>Licenciatura en Museología (5 años)</li>
+          <li>Profesorado en Museología (5 años)</li>
+          <li>Licenciatura en Paleontología (5 años)</li>
+          <li>Tecnicatura Universitaria en Gestión Ambiental (3 años)</li>
+          <li>Tecnicatura Universitaria en Gestión Cultural (3 años)</li>
+          <li>Tecnicatura Universitaria en Paleontología (3 años)</li>
+        </ul>
+      </section>
+
+      <section>
+        <div><h2>Facultad de Ciencias Veterinarias</h2></div>
+        <ul>
+          <li>Medicina Veterinaria (6 años)</li>
+          <li>Licenciatura en Producción Animal (5 años)</li>
+          <li>Tecnicatura Universitaria en Producción Apícola (3 años)</li>
+          <li>Tecnicatura Universitaria en Producción Porcina (3 años)</li>
+        </ul>
+      </section>
+
+      <section>
+        <div><h2>Facultad de Humanidades y Ciencias de la Educación</h2></div>
+        <ul>
+          <li>Licenciatura en Bibliotecología (4 años)</li>
+          <li>Profesorado en Bibliotecología (4 años)</li>
+          <li>Licenciatura en Comunicación Social (5 años)</li>
+          <li>Licenciatura en Geografía (5 años)</li>
+          <li>Profesorado en Geografía (5 años)</li>
+          <li>Licenciatura en Historia (5 años)</li>
+          <li>Profesorado en Historia (5 años)</li>
+          <li>Licenciatura en Letras (5 años)</li>
+          <li>Profesorado en Letras (5 años)</li>
+          <li>Licenciatura en Psicología (5 años)</li>
+          <li>Licenciatura en Educación (4 años)</li>
+          <li>Profesorado en Educación Inicial (4 años)</li>
+          <li>Profesorado en Educación Primaria (4 años)</li>
+          <li>
+            Profesorado en Educación Secundaria en Lengua y Literatura (4 años)
+          </li>
+          <li>Profesorado en Educación Secundaria en Matemática (4 años)</li>
+          <li>
+            Profesorado en Educación Secundaria en Ciencias Naturales (4 años)
+          </li>
+          <li>Profesorado en Educación Secundaria en Geografía (4 años)</li>
+          <li>Profesorado en Educación Secundaria en Historia (4 años)</li>
+          <li>Profesorado en Educación Secundaria en Filosofía (4 años)</li>
+          <li>Tecnicatura Universitaria en Archivística (3 años)</li>
+          <li>Tecnicatura Universitaria en Comunicación Popular (3 años)</li>
+          <li>
+            Tecnicatura Universitaria en Gestión de la Información (3 años)
+          </li>
+          <li>Tecnicatura Universitaria en Gestión Educativa (3 años)</li>
+          <li>
+            Tecnicatura Universitaria en Lengua y Cultura Inglesa (3 años)
+          </li>
+          <li>
+            Tecnicatura Universitaria en Lengua y Cultura Italiana (3 años)
+          </li>
+          <li>
+            Tecnicatura Universitaria en Lengua y Cultura Portuguesa (3 años)
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <div><h2>Facultad de Ingeniería</h2></div>
+        <ul>
+          <li>Ingeniería Aeronáutica (5 años)</li>
+          <li>Ingeniería Civil (5 años y medio)</li>
+          <li>Ingeniería Electromecánica (5 años)</li>
+          <li>Ingeniería Eléctrica (5 años)</li>
+          <li>Ingeniería Electrónica (5 años y medio)</li>
+          <li>Ingeniería Hidráulica (5 años y medio)</li>
+          <li>Ingeniería Industrial (5 años)</li>
+          <li>Ingeniería Mecánica (5 años)</li>
+          <li>Ingeniería Química (5 años y medio)</li>
+          <li>
+            Tecnicatura Universitaria en Administración Industrial (3 años)
+          </li>
+          <li>
+            Tecnicatura Universitaria en Automatización y Control (3 años)
+          </li>
+          <li>Tecnicatura Universitaria en Construcciones Civiles (3 años)</li>
+          <li>Tecnicatura Universitaria en Electricidad Industrial (3 años)</li>
+          <li>Tecnicatura Universitaria en Electrónica Industrial (3 años)</li>
+          <li>
+            Tecnicatura Universitaria en Higiene y Seguridad en el Trabajo (3
+            años)
+          </li>
+          <li>Tecnicatura Universitaria en Mecánica (3 años)</li>
+          <li>Tecnicatura Universitaria en Química (3 años)</li>
+        </ul>
+      </section>
+
+      <section>
+        <div><h2>Facultad de Odontología</h2></div>
+        <ul>
+          <li>Odontología (6 años)</li>
+          <li>Licenciatura en Prótesis Dental (5 años)</li>
+          <li>Tecnicatura Universitaria en Asistencia Odontológica (3 años)</li>
+          <li>Tecnicatura Universitaria en Prótesis Dental (3 años)</li>
+        </ul>
+      </section>
+      <section>
+        <div><h2>Facultad de Psicología</h2></div>
+        <ul>
+          <li>Licenciatura en Psicología (5 años)</li>
+          <li>Licenciatura en Psicopedagogía (5 años)</li>
+          <li>
+            Tecnicatura Universitaria en Acompañamiento Terapéutico (3 años)
+          </li>
+          <li>Tecnicatura Universitaria en Psicogerontología (3 años)</li>
+        </ul>
+      </section>
+
+      <section>
+        <div><h2>Facultad de Trabajo Social</h2></div>
+        <ul>
+          <li>Licenciatura en Trabajo Social (5 años)</li>
+          <li>
+            Tecnicatura Universitaria en Gestión de Políticas Sociales (3 años)
+          </li>
+          <li>
+            Tecnicatura Universitaria en Promoción Comunitaria en Salud (3 años)
+          </li>
+        </ul>
+      </section>
+      <section>
+        <div><h2>Facultad de Periodismo y Comunicación Social</h2></div>
+        <ul>
+          <li>Licenciatura en Comunicación Social (5 años)</li>
+          <li>Licenciatura en Periodismo (5 años)</li>
+          <li>Licenciatura en Publicidad (5 años)</li>
+          <li>Tecnicatura Universitaria en Comunicación Popular (3 años)</li>
+          <li>
+            Tecnicatura Universitaria en Comunicación Pública de la Ciencia (3
+            años)
+          </li>
+        </ul>
+      </section>
+      <section>
+        <div><h2>Facultad de Arquitectura y Urbanismo</h2></div>
+        <ul><li>Arquitectura (6 años)</li></ul>
+      </section>
+      <section>
+        <div><h2>Facultad de Informática</h2></div>
+        <ul>
+          <li>Licenciatura en Informática (5 años)</li>
+          <li>Licenciatura en Sistemas (5 años)</li>
+          <li>Ingeniería en Computación (5 años)</li>
+          <li>Analista Programador Universitario (3 años)</li>
+          <li>
+            Analista en Tecnologías de la Información y la Comunicación (3 años)
+          </li>
+        </ul>
+      </section>
+    </div>
+  </div>
 </Layout>
 
 <style>
+  .facus {
+    text-align: center;
+  }
+
+  .facus h1{
+    margin: 50px;
+  }
+
+  .facus-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
+    padding: 15px;
+    gap: 15px;
+  }
+
+  .facus-container section {
+    height: auto;
+    text-align: start;
+    border-radius: 10px;
+    background-color: rgb(233, 233, 233);
+    box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.395);
+  }
+
+  .facus-container section h2 {
+    height: 107px;
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 20px;
+    color: white;
+    background: linear-gradient(to top, #60a8f0, rgb(1 95 255));
+    border-radius: 10px 10px 0 0;
+  }
+
+  section ul {
+    margin-left: 30px;
+    font-size: 1.4rem;
+  }
+
+  /* section:first-child {
+    grid-row-start: 1;
+    grid-row-end: 3;
+  } */
+
+  @media (width < 430px) {
+    .facus-container {
+      grid-template-columns: 1fr;
+    }
+    .facus-container section h2 {
+    height: auto;
+  }
+  }
 </style>
