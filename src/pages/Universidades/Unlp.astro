@@ -29,10 +29,10 @@ import UniBtn from "../../components/Uni-btn.astro";
   <UniBtn btn3="Tutorías" btn4="Rel. Inter" uni="unlp" />
 
   <div class="facus">
-    <h1><strong>Facultades</strong></h1>
-
+    <h1>
+      <strong>Facultades</strong>
+    </h1>
     <div class="facus-container">
-
       <section>
         <div><h2>Facultad de Artes</h2></div>
         <ul>
@@ -98,6 +98,7 @@ import UniBtn from "../../components/Uni-btn.astro";
           <li>Ciencia de Datos en Organizaciones (4 años)</li>
         </ul>
       </section>
+
       <section>
         <div><h2>Facultad de Ciencias Exactas</h2></div>
         <ul>
@@ -259,6 +260,7 @@ import UniBtn from "../../components/Uni-btn.astro";
           <li>Tecnicatura Universitaria en Prótesis Dental (3 años)</li>
         </ul>
       </section>
+
       <section>
         <div><h2>Facultad de Psicología</h2></div>
         <ul>
@@ -283,6 +285,7 @@ import UniBtn from "../../components/Uni-btn.astro";
           </li>
         </ul>
       </section>
+
       <section>
         <div><h2>Facultad de Periodismo y Comunicación Social</h2></div>
         <ul>
@@ -296,10 +299,12 @@ import UniBtn from "../../components/Uni-btn.astro";
           </li>
         </ul>
       </section>
+
       <section>
         <div><h2>Facultad de Arquitectura y Urbanismo</h2></div>
         <ul><li>Arquitectura (6 años)</li></ul>
       </section>
+
       <section>
         <div><h2>Facultad de Informática</h2></div>
         <ul>
@@ -317,11 +322,30 @@ import UniBtn from "../../components/Uni-btn.astro";
 </Layout>
 
 <style>
+/*   section:first-child {
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+
+  section:nth-child(10) {
+    grid-row-start: 4;
+    grid-row-end: 7;
+  }
+  section:nth-child(11) {
+    grid-row-start: 4;
+    grid-row-end: 6;
+  }
+
+  section:nth-child(9) {
+    grid-row-start: 4;
+    grid-row-end: 5;
+  }
+ */
   .facus {
     text-align: center;
   }
 
-  .facus h1{
+  .facus h1 {
     margin: 50px;
   }
 
@@ -346,7 +370,7 @@ import UniBtn from "../../components/Uni-btn.astro";
     padding: 15px;
     margin-bottom: 20px;
     color: white;
-    background: linear-gradient(to top, #2f9ef7,rgb(1 17 255));
+    background: linear-gradient(to top, #2f9ef7, rgb(1 17 255));
     border-radius: 10px 10px 0 0;
   }
 
@@ -354,11 +378,6 @@ import UniBtn from "../../components/Uni-btn.astro";
     margin-left: 30px;
     font-size: 1.4rem;
   }
-
-  /* section:first-child {
-    grid-row-start: 1;
-    grid-row-end: 3;
-  } */
 
   @media (width < 460px) {
     .facus-container {
