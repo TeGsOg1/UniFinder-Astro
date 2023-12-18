@@ -23,7 +23,7 @@ const { Uni, img, estado, estadotxt } = Astro.props
       </h4>
       <br>
       <div class="priv-pub">
-        <img src={ estado } alt=`${estadotxt}.img` id="priv-pub-img">
+        <img src={ estado } alt=`${estadotxt}.img`  id="priv-pub-img" transition:z-index="5">
         <h5 id="priv-pub-txt">Universidad { estadotxt }</h5>
       </div>
     </div>

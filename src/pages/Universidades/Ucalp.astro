@@ -2,6 +2,7 @@
 import UniBtn from "../../components/Uni-btn.astro";
 import UniCard from "../../components/Uni-card.astro";
 import UniMap from "../../components/Uni-map.astro";
+import UniPgof from "../../components/Uni-pgof.astro";
 import Layout from "../../layouts/Layout.astro";
 ---
 
@@ -28,6 +29,7 @@ import Layout from "../../layouts/Layout.astro";
     permiten el contacto con otras culturas, completan una porpuesta accesible,
     humana y práctica.
   </UniCard>
+  <UniPgof uni="UCALP" href="https://www.ucalp.edu.ar"/>
   <UniMap
     map="https://www.google.com/maps/d/u/0/embed?mid=1PwU8bzxJFL22Nbsy6NzwQy37aVylc0c&ehbc=2E312F&noprof=1"
   />
@@ -37,7 +39,7 @@ import Layout from "../../layouts/Layout.astro";
     <h1>
       <strong>Facultades</strong>
     </h1>
-    <div class="facus-container">
+    <article class="facus-container">
       <section>
         <div><h2>Facultad de Derecho y Ciencias Políticas</h2></div>
         <ul>
@@ -162,8 +164,7 @@ import Layout from "../../layouts/Layout.astro";
           <li>Tecnicatura Universitaria en Química (3 años)</li>
         </ul>
       </section>
-      
-    </div>
+    </article>
   </div>
 </Layout>
 

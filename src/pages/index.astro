@@ -13,14 +13,20 @@ import Layout from "../layouts/Layout.astro";
       En esta página te daremos información de las siguientes universidades:
     </h3>
     <br />
-    <img src="/Logo-UCALP.png" class="Logo-uni" />
-    <img src="/Logo-UNLP.png" class="Logo-uni" />
-    <img src="/Logo-UBA.png" class="Logo-uni" />
+    <img src="/Logo-UCALP.png" class="Logo-uni" alt="Logo de la UCALP"/>
+    <img src="/Logo-UNLP.png" class="Logo-uni" alt="Logo de la UNLP"/>
+    <img src="/Logo-UBA.png" class="Logo-uni" alt="Logo de la UBA"/>
   </div>
   <div id="Unis">
     <div class="flex-container">
       <div class="unis-flex" id="unis-flex-izq">
-        <img src="/30_rectorado-institucional.jpg" id="uni-img" alt="Rectorado UNLP" style="view-transition-name:UNLP" />
+        <img
+          transition:z-index="5"
+          src="/30_rectorado-institucional.jpg"
+          id="uni-img"
+          alt="Rectorado UNLP"
+          style="view-transition-name:UNLP"
+        />
       </div>
       <div class="unis-content" id="unis-flex-der">
         <div id="uni-name">
@@ -34,17 +40,42 @@ import Layout from "../layouts/Layout.astro";
           mejores del mundo
         </h3>
         <p class="uf-info-uni">
-          <i class="fa-solid fa-location-dot"></i> Direc: La Plata Av. 7 N° 776
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="128"
+            height="128"
+            viewBox="0 0 24 24"
+            ><path
+              fill="#ffffff"
+              fill-rule="evenodd"
+              d="M12 2c-4.418 0-8 4.003-8 8.5c0 4.462 2.553 9.312 6.537 11.174a3.45 3.45 0 0 0 2.926 0C17.447 19.812 20 14.962 20 10.5C20 6.003 16.418 2 12 2Zm0 10a2 2 0 1 0 0-4a2 2 0 0 0 0 4Z"
+              clip-rule="evenodd"></path></svg
+          > Direc: La Plata Av. 7 N° 776
         </p>
         <p class="uf-info-uni">
-          <i class="fa-solid fa-phone"></i> Tel.: +54 221 611-9433
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="128"
+            height="128"
+            viewBox="0 0 24 24"
+            ><path
+              fill="#ffffff"
+              d="M4.05 21q-.45 0-.75-.3t-.3-.75V15.9q0-.325.225-.588t.575-.362l3.45-.7q.35-.05.713.063t.587.337L10.9 17q.95-.55 1.8-1.213t1.625-1.437q.825-.8 1.513-1.663t1.187-1.787L14.6 8.45q-.2-.2-.275-.475T14.3 7.3l.65-3.5q.05-.325.325-.563T15.9 3h4.05q.45 0 .75.3t.3.75q0 3.125-1.363 6.175t-3.862 5.55q-2.5 2.5-5.55 3.863T4.05 21Z"
+            ></path></svg
+          > Tel.: +54 221 611-9433
         </p>
         <a class="btn-uni" href="/Universidades/Unlp">Más Info</a>
       </div>
     </div>
     <div class="flex-container">
       <div class="unis-flex" id="unis-flex-izq">
-        <img src="/Rectorado-UCALP.jpg" id="uni-img" alt="Rectorado UCALP" style="view-transition-name:UCALP"/>
+        <img
+          transition:z-index="5"
+          src="/Rectorado-UCALP.jpg"
+          id="uni-img"
+          alt="Rectorado UCALP"
+          style="view-transition-name:UCALP"
+        />
       </div>
       <div class="unis-content" id="unis-flex-der">
         <div id="uni-name">
@@ -55,13 +86,41 @@ import Layout from "../layouts/Layout.astro";
           modelo cristiano.
         </h3>
         <p class="uf-info-uni">
-          <i class="fa-solid fa-envelope"></i> Email: info@ucalp.edu.ar
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="128"
+            height="128"
+            viewBox="0 0 24 24"
+            ><path
+              fill="#ffffff"
+              d="M4 20q-.825 0-1.413-.588T2 18V6q0-.825.588-1.413T4 4h16q.825 0 1.413.588T22 6v12q0 .825-.588 1.413T20 20H4Zm8-7l8-5V6l-8 5l-8-5v2l8 5Z"
+            ></path></svg
+          > Email: info@ucalp.edu.ar
         </p>
         <p class="uf-info-uni">
-          <i class="fa-solid fa-location-dot"></i> Direc: Calle 13 nº 1227
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="128"
+            height="128"
+            viewBox="0 0 24 24"
+            ><path
+              fill="#ffffff"
+              fill-rule="evenodd"
+              d="M12 2c-4.418 0-8 4.003-8 8.5c0 4.462 2.553 9.312 6.537 11.174a3.45 3.45 0 0 0 2.926 0C17.447 19.812 20 14.962 20 10.5C20 6.003 16.418 2 12 2Zm0 10a2 2 0 1 0 0-4a2 2 0 0 0 0 4Z"
+              clip-rule="evenodd"></path></svg
+          > Direc: Calle 13 nº 1227
         </p>
         <p class="uf-info-uni">
-          <i class="fa-solid fa-phone"></i> Tel.: +54 221 439 3100
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="128"
+            height="128"
+            viewBox="0 0 24 24"
+            ><path
+              fill="#ffffff"
+              d="M4.05 21q-.45 0-.75-.3t-.3-.75V15.9q0-.325.225-.588t.575-.362l3.45-.7q.35-.05.713.063t.587.337L10.9 17q.95-.55 1.8-1.213t1.625-1.437q.825-.8 1.513-1.663t1.187-1.787L14.6 8.45q-.2-.2-.275-.475T14.3 7.3l.65-3.5q.05-.325.325-.563T15.9 3h4.05q.45 0 .75.3t.3.75q0 3.125-1.363 6.175t-3.862 5.55q-2.5 2.5-5.55 3.863T4.05 21Z"
+            ></path></svg
+          > Tel.: +54 221 439 3100
         </p>
         <a class="btn-uni" href="/Universidades/Ucalp">Más Info</a>
       </div>
@@ -69,7 +128,13 @@ import Layout from "../layouts/Layout.astro";
 
     <div class="flex-container">
       <div class="unis-flex" id="unis-flex-izq">
-        <img src="/argencon_uba.jpg" id="uni-img" alt="Rectorado UBA" style="view-transition-name:UBA"/>
+        <img
+          transition:z-index="5"
+          src="/argencon_uba.jpg"
+          id="uni-img"
+          alt="Rectorado UBA"
+          style="view-transition-name:UBA"
+        />
       </div>
       <div class="unis-content" id="unis-flex-der">
         <div id="uni-name">
@@ -82,14 +147,41 @@ import Layout from "../layouts/Layout.astro";
           rigurosidad y compromiso social.
         </h3>
         <p class="uf-info-uni">
-          <i class="fa-solid fa-envelope"></i> Email: mesadeayudaee@rec.uba.ar
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="128"
+            height="128"
+            viewBox="0 0 24 24"
+            ><path
+              fill="#ffffff"
+              d="M4 20q-.825 0-1.413-.588T2 18V6q0-.825.588-1.413T4 4h16q.825 0 1.413.588T22 6v12q0 .825-.588 1.413T20 20H4Zm8-7l8-5V6l-8 5l-8-5v2l8 5Z"
+            ></path></svg
+          > Email: mesadeayudaee@rec.uba.ar
         </p>
         <p class="uf-info-uni">
-          <i class="fa-solid fa-location-dot"></i> Direc: Viamonte 430, C1053
-          CABA
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="128"
+            height="128"
+            viewBox="0 0 24 24"
+            ><path
+              fill="#ffffff"
+              fill-rule="evenodd"
+              d="M12 2c-4.418 0-8 4.003-8 8.5c0 4.462 2.553 9.312 6.537 11.174a3.45 3.45 0 0 0 2.926 0C17.447 19.812 20 14.962 20 10.5C20 6.003 16.418 2 12 2Zm0 10a2 2 0 1 0 0-4a2 2 0 0 0 0 4Z"
+              clip-rule="evenodd"></path></svg
+          > Direc: Viamonte 430, C1053 CABA
         </p>
         <p class="uf-info-uni">
-          <i class="fa-solid fa-phone"></i> Tel.: +54 11 4510-1100
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="128"
+            height="128"
+            viewBox="0 0 24 24"
+            ><path
+              fill="#ffffff"
+              d="M4.05 21q-.45 0-.75-.3t-.3-.75V15.9q0-.325.225-.588t.575-.362l3.45-.7q.35-.05.713.063t.587.337L10.9 17q.95-.55 1.8-1.213t1.625-1.437q.825-.8 1.513-1.663t1.187-1.787L14.6 8.45q-.2-.2-.275-.475T14.3 7.3l.65-3.5q.05-.325.325-.563T15.9 3h4.05q.45 0 .75.3t.3.75q0 3.125-1.363 6.175t-3.862 5.55q-2.5 2.5-5.55 3.863T4.05 21Z"
+            ></path></svg
+          > Tel.: +54 11 4510-1100
         </p>
         <a class="btn-uni" href="/Universidades/Uba">Más Info</a>
       </div>
@@ -122,225 +214,231 @@ import Layout from "../layouts/Layout.astro";
 </Layout>
 
 <style>
-    .flex-container {
-      display: flex;
-      flex-wrap: wrap;
-      width: 100%;
-      margin-bottom: 30px;
-    }
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 30px;
+  }
 
-    .unis-flex {
-      border: 0.7px solid rgb(31, 30, 30);
+  .unis-flex {
+    border: 0.7px solid rgb(31, 30, 30);
 
-      margin: 0 auto;
-      height: 506px;
-      /*     border: 2px solid black;
+    margin: 0 auto;
+    height: 506px;
+    /*     border: 2px solid black;
    */
-    }
+  }
 
-    .unis-content {
-      height: 100%;
+  .unis-content {
+    height: 100%;
+  }
+
+  .unis-flex img {
+    z-index: 1;
+    max-width: 100%;
+    height: 100%;
+    width: auto;
+  }
+
+  .unis-content svg {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 10px
+  }
+
+  #unis-flex-der {
+    padding-left: 20px;
+    color: aliceblue;
+    flex-grow: calc(1);
+    width: 40%;
+    background: rgb(3, 3, 117);
+    height: auto;
+    /*     color: #fff;
+ */
+  }
+
+  #unis-flex-der h3 {
+    margin-bottom: 10px;
+    font-size: 25px;
+    font-size: 150%;
+  }
+
+  #unis-flex-der h2 {
+    margin-top: 1rem;
+    text-align: center;
+    color: aliceblue;
+    font-size: 40px;
+  }
+
+  .uf-presentacion {
+    margin-top: 60px;
+    width: 100%;
+    height: 100vh;
+    background-image: url(/Fondo.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .uf-presentacion span {
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    font-size: 8rem;
+    letter-spacing: -3px;
+    margin-bottom: 100px;
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke: 0.1px rgb(1, 30, 117); /* para Chrome y Safari */
+    text-stroke: 1px rgb(1, 30, 117); /* para el resto de navegadores */
+    border-bottom: 6px solid rgb(1, 30, 117);
+  }
+
+  .uf-presentacion h6 {
+    font-size: 20px;
+  }
+
+  .uf-presentacion-unis {
+    width: 100%;
+    text-align: center;
+  }
+
+  .uf-presentacion-unis h3 {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .Logo-uni {
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: auto;
+    width: 180px;
+    margin-bottom: 30px;
+  }
+
+  #uf-info-uni {
+    font-size: 20px;
+  }
+
+  .btn-uni {
+    padding: 15px 20px;
+    font-size: 17px;
+    border-radius: 5px;
+    border: none;
+    text-decoration: none;
+    color: aliceblue;
+    background-color: rgb(0, 145, 255);
+
+  }
+
+  .btn-uni:hover {
+    cursor: pointer;
+    background-color: rgb(0, 115, 255);
+  }
+
+  .test-voc {
+    text-align: center;
+  }
+
+  .test-voc a {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  /* Apartir de aca el codigo es para la parte responsive */
+  @media screen and (max-width: 1050px) {
+    #unis-flex-der h3 {
+      font-size: 20px;
     }
 
     .unis-flex img {
-      z-index: 1;
-      max-width: 100%;
-      height: 100%;
-      width: auto;
+      width: 400px;
     }
 
-    #unis-flex-der {
-      padding-left: 20px;
-      color: aliceblue;
-      flex-grow: calc(1);
-      width: 40%;
-      background: rgb(3, 3, 117);
+    #uni-img {
       height: auto;
-      /*     color: #fff;
- */
     }
+  }
 
+  @media screen and (max-width: 732px) {
+    #unis-flex-der {
+      padding: 5px;
+      height: auto;
+    }
+  }
+
+  @media screen and (max-width: 720px) {
     #unis-flex-der h3 {
-      margin-bottom: 10px;
-      font-size: 25px;
-      font-size: 150%;
-    }
-
-    #unis-flex-der h2 {
-      margin-top: 1rem;
-      text-align: center;
-      color: aliceblue;
-      font-size: 40px;
-    }
-
-    .uf-presentacion {
-      margin-top: 60px;
-      width: 100%;
-      height: 100vh;
-      background-image: url(/Fondo.jpeg);
-      background-repeat: no-repeat;
-      background-size: cover;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      font-size: 15px;
     }
 
     .uf-presentacion span {
-      text-transform: uppercase;
-      color: rgb(255, 255, 255);
-      font-size: 8rem;
-      letter-spacing: -3px;
-      margin-bottom: 100px;
-      color: rgb(255, 255, 255);
-      -webkit-text-stroke: 0.1px rgb(1, 30, 117); /* para Chrome y Safari */
-      text-stroke: 1px rgb(1, 30, 117); /* para el resto de navegadores */
-      border-bottom: 6px solid rgb(1, 30, 117);
+      font-size: 6rem;
+      color: rgb(38, 73, 245);
+      border-bottom: 0px;
+      -webkit-text-stroke: rgb(6, 187, 237); /* para Chrome y Safari */
+      text-stroke: rgb(6, 187, 237);
+    }
+  }
+
+  @media screen and (max-width: 668px) {
+    #unis-flex-der {
+      height: 400px;
+      margin-top: 0px;
+      padding: 10px;
+    }
+  }
+
+  @media screen and (max-width: 620px) {
+    .uf-presentacion span {
+      font-size: 5rem;
     }
 
-    .uf-presentacion h6 {
-      font-size: 20px;
-    }
-
-    .uf-presentacion-unis {
-      width: 100%;
-      text-align: center;
-    }
-
-    .uf-presentacion-unis h3 {
-      text-align: center;
-      margin-top: 10px;
-    }
-
-    .Logo-uni {
-      padding-right: 10px;
-      padding-left: 10px;
-      margin: auto;
-      width: 180px;
-      margin-bottom:30px;
-    }
-
-    #uf-info-uni {
-      font-size: 20px;
-    }
-
-    .btn-uni {
-      padding: 15px 20px;
-      font-size: 17px;
-      border-radius: 5px;
-      border: none;
-      text-decoration: none;
-      color: aliceblue;
-      background-color: rgb(0, 145, 255);
-      margin-top: 20px;
-    }
-
-    .btn-uni:hover {
-      cursor: pointer;
-      background-color: rgb(0, 115, 255);
-    }
-
-    .test-voc {
-      text-align: center;
+    .uf-presentacion {
+      height: 500px;
     }
 
     .test-voc a {
-      padding-left: 10px;
-      padding-right: 10px;
+      display: block;
+    }
+  }
+
+  @media screen and (max-width: 410px) {
+    .uf-presentacion span {
+      font-size: 4rem;
+    }
+  }
+
+  @media screen and (max-width: 550px) {
+    .unis-flex img {
+      width: 400px;
     }
 
-    /* Apartir de aca el codigo es para la parte responsive */
-    @media screen and (max-width: 1050px) {
-      #unis-flex-der h3 {
-        font-size: 20px;
-      }
-      
-      .unis-flex img {
-        width: 400px;
-      }
-
-      #uni-img {
-        height: auto;
-      }
+    #uni-img {
+      height: auto;
     }
-
-    @media screen and (max-width: 732px) {
-      #unis-flex-der {
-        padding: 5px;
-        height: auto;
-      }
+  }
+  @media screen and (max-width: 385px) {
+    .uf-presentacion {
+      height: 500px;
     }
-
-    @media screen and (max-width: 720px) {
-      #unis-flex-der h3 {
-        font-size: 15px;
-      }
-
-      .uf-presentacion span {
-        font-size: 6rem;
-        color: rgb(38, 73, 245);
-        border-bottom: 0px;
-        -webkit-text-stroke: rgb(6, 187, 237); /* para Chrome y Safari */
-        text-stroke: rgb(6, 187, 237);
-      }
+    .uf-presentacion span {
+      font-size: 4rem;
     }
+  }
 
-    @media screen and (max-width: 668px) {
-      #unis-flex-der {
-        height: 400px;
-        margin-top: 0px;
-      }
+  @media screen and (max-width: 363px) {
+    .Logo-uni {
+      padding-right: 0;
+      padding-left: 0;
+      margin-top: 10px;
     }
+  }
 
-    @media screen and (max-width: 620px) {
-      .uf-presentacion span {
-        font-size: 5rem;
-      }
-
-      .uf-presentacion {
-        height: 500px;
-      }
-
-      .test-voc a {
-        display: block;
-      }
+  @media screen and (max-width: 325px) {
+    .uf-presentacion span {
+      font-size: 3.8rem;
     }
-
-    @media screen and (max-width: 410px) {
-      .uf-presentacion span {
-        font-size: 4rem;
-      }
-    }
-
-    @media screen and (max-width: 550px) {
-      .unis-flex img {
-        width: 400px;
-      }
-
-      #uni-img {
-        height: auto;
-      }
-    }
-    @media screen and (max-width: 385px) {
-      .uf-presentacion {
-        height: 500px;
-      }
-      .uf-presentacion span {
-        font-size: 4rem;
-      }
-    }
-
-    @media screen and (max-width: 363px) {
-      .Logo-uni {
-        padding-right: 0;
-        padding-left: 0;
-        margin-top: 10px;
-      }
-    }
-
-    @media screen and (max-width: 325px) {
-      .uf-presentacion span {
-        font-size: 3.8rem;
-      }
-    }
+  }
 </style>
-

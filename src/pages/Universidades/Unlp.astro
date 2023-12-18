@@ -3,6 +3,7 @@ import Layout from "../../layouts/Layout.astro";
 import UniCard from "../../components/Uni-card.astro";
 import UniMap from "../../components/Uni-map.astro";
 import UniBtn from "../../components/Uni-btn.astro";
+import UniPgof from "../../components/Uni-pgof.astro";
 ---
 
 <Layout title="UF-UNLP">
@@ -23,6 +24,7 @@ import UniBtn from "../../components/Uni-btn.astro";
     alumnos de posgrado. Además cuenta con 100 cátedras libres dependientes de
     la Presidencia, que se suman a las muchas que funcionan en las Facultades.
   </UniCard>
+  <UniPgof uni="UNLP" href="https://unlp.edu.ar"/>
   <UniMap
     map="https://www.google.com/maps/d/u/0/embed?mid=1l6bnbqLajZtq7SPE3EteS6qrIsux_Xw&ehbc=2E312F&noprof=1"
   />
@@ -32,7 +34,7 @@ import UniBtn from "../../components/Uni-btn.astro";
     <h1>
       <strong>Facultades</strong>
     </h1>
-    <div class="facus-container">
+    <article class="facus-container">
       <section>
         <div><h2>Facultad de Artes</h2></div>
         <ul>
@@ -317,30 +319,12 @@ import UniBtn from "../../components/Uni-btn.astro";
           </li>
         </ul>
       </section>
-    </div>
+    </article>
   </div>
 </Layout>
 
 <style>
-/*   section:first-child {
-    grid-row-start: 1;
-    grid-row-end: 3;
-  }
-
-  section:nth-child(10) {
-    grid-row-start: 4;
-    grid-row-end: 7;
-  }
-  section:nth-child(11) {
-    grid-row-start: 4;
-    grid-row-end: 6;
-  }
-
-  section:nth-child(9) {
-    grid-row-start: 4;
-    grid-row-end: 5;
-  }
- */
+  
   .facus {
     text-align: center;
   }
@@ -380,6 +364,10 @@ import UniBtn from "../../components/Uni-btn.astro";
   }
 
   @media (width < 460px) {
+    .facus h1 {
+      font-size: 1.9rem;
+    }
+
     .facus-container {
       grid-template-columns: 1fr;
     }

@@ -1,0 +1,82 @@
+---
+interface Props {
+  uni: string;
+  href: string;
+}
+
+const { uni, href } = Astro.props;
+---
+
+<div>
+  <img src=`/public/logo-${uni}.png` alt=`Logo ${uni}`/>
+  <h3>
+    Visitá la página oficial para obtener la información completa y actualizada
+    de la {uni}
+  </h3>
+  <h3 id="h3a"><a href={href} target="_blank">Aquí</a></h3>
+</div>
+
+<style>
+  div {
+    background: aliceblue;
+
+    width: 100%;
+    height: 150px;
+    height: auto;
+
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+
+    color: rgb(0, 0, 0);
+    align-items: center;
+    justify-content: center;
+  }
+
+  img {
+    width: auto;
+    height: 120px;
+
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  h3 {
+    margin-left: 10px;
+    margin-right: 10px;
+    
+  }
+
+  a {
+    margin-right: 30px;
+    padding: 10px 20px;
+    background-color: rgb(0, 81, 255);
+    border-radius: 10px;
+    right: 0;
+    color: aliceblue;
+  }
+
+  /* Media Querys */
+
+  @media (width < 1241px) {
+    #h3a {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+  }
+  
+  @media (width < 560px) {
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    #h3a {
+        margin-left: 30px;
+    }
+
+    a {
+        padding: 10px 20px;
+        font-size: 1.3rem;
+    }
+  }
+</style>

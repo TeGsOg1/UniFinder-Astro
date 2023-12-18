@@ -2,6 +2,7 @@
 import UniBtn from "../../components/Uni-btn.astro";
 import UniCard from "../../components/Uni-card.astro";
 import UniMap from "../../components/Uni-map.astro";
+import UniPgof from "../../components/Uni-pgof.astro";
 import Layout from "../../layouts/Layout.astro";
 ---
 
@@ -26,6 +27,7 @@ import Layout from "../../layouts/Layout.astro";
     (especializaciones y maestrías), de quinto nivel (doctorados) y de sexto
     nivel (posdoctorados)
   </UniCard>
+  <UniPgof uni="UBA" href="https://www.uba.ar"/>
   <UniMap
     map="https://www.google.com/maps/d/u/0/embed?mid=1FwENuNI9UCW4JjrcF_dLHlCB-OuAgFo&ehbc=2E312F&noprof=1"
   />
@@ -35,7 +37,7 @@ import Layout from "../../layouts/Layout.astro";
     <h1>
       <strong>Facultades</strong>
     </h1>
-    <div class="facus-container">
+    <article class="facus-container">
       <section>
         <div><h2>Facultad de Agronomía</h2></div>
         <ul>
@@ -296,7 +298,7 @@ import Layout from "../../layouts/Layout.astro";
           <li>Tecnicatura en Psicogerontología (3 años)</li>
         </ul>
       </section>
-    </div>
+    </article>
   </div>
 </Layout>
 
