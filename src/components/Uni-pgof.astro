@@ -35,7 +35,7 @@ const { uni, href } = Astro.props;
 
   img {
     width: auto;
-    height: 120px;
+    height: 130px;
 
     margin-left: 20px;
     margin-right: 20px;
@@ -77,6 +77,12 @@ const { uni, href } = Astro.props;
     a {
         padding: 10px 20px;
         font-size: 1.3rem;
+    }
+  }
+
+  @media (width < 380px) {
+    h3 {
+        font-size: 1.2rem;
     }
   }
 </style>
