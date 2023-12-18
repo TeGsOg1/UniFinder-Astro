@@ -32,119 +32,81 @@ const { map } = Astro.props
     background: linear-gradient( to right, rgb(0, 200, 255), rgb(0, 140, 255), rgb(0, 89, 255));
     display: flex;
     flex-wrap: wrap;
+
     margin-top: 10px;
+    padding: 20px;
     text-align: center;
+    align-items: center;
+
     width: 100%;
     height: 600px;
 }
 
-#facus-flex-izq {
-    padding: 0 20px;
-
-}
-
-#facus-flex-der {
-    width: auto;
-    width: 700px;
-    margin-top: 60px;
-    padding-left: 20px;
-    margin-top: 60px;
-    flex-grow: calc(1);
-    width: 40%;
-    height: auto;
-    margin-right: 20px;
-
-}
-
-
-.facus-flex h1{
-    margin-top: 50px;
-    font-size: 2.7rem;
-}
-
-#inv-facu{
-    margin-top: 110px;
-    font-size: 2.3rem;
+.facus-flex {
+    width: 50%;
 }
 
 #map {
-    width: 90%;
+    width: 100%;
     height: 450px;
 }
 
-
-@media screen and (max-width:1703px) {
-    #facus-flex-izq {
-        width: 600px;
-    }
+.facus-container h1 {
+  margin-top: 30px
 }
 
-@media screen and (max-width:1500px) {
-    #facus-flex-izq {
-        width: 500px;
-    }
+#facus-flex-der {
+    flex-grow: calc(1); 
+    width: 40%;
+    
 }
 
-@media screen and (max-width:1400px) {
-    .facus-col {
-        width: 48%;
-    }
+#facus-flex-izq {
+    padding: 0 20px;
+    height: 100%;
+}
+
+#inv-facu {
+  margin-top: 110px;
+  font-size: 2.3rem;
+ width: 100%;
 }
 
 
-@media screen and (max-width:1300px) {
-    #facus-flex-izq {
-        width: 400px;
-    }
+
+/* Media Querys */
+
+@media (width < 941px) {
+  .facus-container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  #facus-flex-der {
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  #facus-flex-izq {
+    padding: 0;
+    width: 100%;
 }
 
-@media screen and (max-width:1000px) {
-    .facus-col {
-        width: 100%;
-    }
+  #inv-facu {
+  margin-top: 0;
+  font-size: 1.8rem;
 }
 
-@media screen and (max-width:940px) {
-    .facus-container {
-        height: 970px;
-    }
+.facus-container h1 {
+  top: 0;
+  margin-bottom: 30px;
+}
 
-    #facus-flex-izq {
-        width: 100%;
-    }
+}
 
-    #facus-flex-der {
-        justify-content: center;
-        margin-right: 20px;
-        margin-top: 0;
-    }
-
+@media (width < 380px) {
     #inv-facu {
-        margin-top: 50px;
+        font-size: 1.4rem;
     }
-
-}
-
-@media screen and (max-width:929px) {
-    #unis-flex-der {
-        margin-top: 0;
-        height: auto;
-    }
-
-    .facus-flex {
-        height: auto;
-    }
-}
-
-@media screen and (max-width:627px) {
-
-
-    #inv-facu {
-        font-size: 1.6rem;
-    }
-
-    #facus-flex-der {
-        margin-top: 10px;
-    }
-}
+  }
 </style>
