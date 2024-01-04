@@ -1,0 +1,145 @@
+---
+import Burger from "../components/icons/Burger.astro";
+---
+
+<nav class="fixed-top">
+  <input type="checkbox" id="check" />
+  <label for="check">
+    <Burger />
+  </label>
+  <div class="uf-class">
+    <a href="/"><img id="uf-logo" src="/LogoUF.png" alt="Logo UF" />UniFinder</a
+    >
+  </div>
+  <ul>
+    <li class="inicio"><a id="inicio" href="/">Inicio</a></li>
+    <li class="test-voc"><a href="/#test-voc">Test vocacional</a></li>
+    <li class="Contacto"><a href="#footer">Contacto</a></li>
+  </ul>
+</nav>
+
+<style>
+  nav {
+    z-index: 2;
+    background-color: var(--color-principal-);
+    height: 60px;
+    width: 100%;
+  }
+
+  nav ul {
+    float: right;
+    font-size: 20px;
+    padding-bottom: 10px;
+    cursor: default;
+  }
+
+  nav li {
+    margin-right: 10px;
+    margin-top: 30px;
+  }
+
+  nav ul li {
+    margin-top: 17px;
+    display: inline-block;
+  }
+
+  nav a {
+    text-decoration: none;
+    justify-content: center;
+    border-radius: 30px;
+    padding: 0.5rem 1rem;
+    border: none;
+    color: aliceblue;
+    transition: 0.2s all ease;
+  }
+
+  nav a:hover {
+    color: aliceblue;
+    text-decoration: none;
+  }
+
+  .uf-class {
+    margin-top: 5px;
+    position: fixed;
+    margin-right: auto;
+    padding-left: 10px;
+    font-size: 25px;
+    padding-bottom: 10px;
+  }
+
+  #uf-logo {
+    padding-right: 5px;
+    height: 56px;
+    padding-bottom: 9px;
+  }
+
+  nav svg {
+    margin-top: 11px;
+    cursor: pointer;
+    float: right;
+    height: auto;
+    width: 40px;
+    margin-right: 40px;
+    display: none;
+  }
+
+  nav label {
+    float: right;
+    width: 20px;
+  }
+
+  #check {
+    display: none;
+  }
+
+  /*De aca en adelante es codigo para hacer la pag responsive
+  -----------------------------------------------------------*/
+  @media (max-width: 1031px) {
+    nav ul {
+      font-size: 20px;
+    }
+  }
+
+  @media (max-width: 920px) {
+    nav li {
+      margin-right: 10px;
+    }
+  }
+
+  @media (max-width: 790px) {
+    nav li {
+      margin-right: 1px;
+    }
+  }
+
+  @media (max-width: 720px) {
+    nav svg {
+      display: block;
+    }
+
+    nav ul {
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: rgb(128, 128, 128);
+      top: 59px;
+      left: -100%;
+      transition: 0.5s;
+      text-align: center;
+    }
+
+    nav ul li {
+      display: block;
+      padding-bottom: 20px;
+      font-size: 20px;
+    }
+
+    nav ul li a:active {
+      background-color: rgb(48, 48, 219);
+    }
+
+    #check:checked ~ ul {
+      left: 0%;
+    }
+  }
+</style>
