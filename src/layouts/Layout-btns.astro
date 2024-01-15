@@ -66,6 +66,12 @@ const { uni, btn } = Astro.props
       margin-top: 20px;
     }
 
+    @media screen and (width<985px) {
+      .titulo h1 {
+        font-size: 3.5rem;
+      }
+    }
+
     @media screen and (max-width: 600px) {
       #solapa {
         height: 20px;
@@ -82,23 +88,41 @@ const { uni, btn } = Astro.props
       }
     }
 
+    @media screen and (width<720px) {
+      
+      .titulo h1 {
+        font-size: 2.5rem;
+        padding-top: 120px;
+      }
+      
+      .text h3 {
+        font-size: 1.1rem;
+      }
+
+      .text h2 {
+        font-size: 1.2rem;
+      }
+    }
     @media screen and (max-width: 415px) {
       #solapa {
         height: 20px;
         transform: translateY(0px);
       }
 
+      .text {
+        padding: 0 20px;
+      }
+
       .titulo h1 {
         font-size: 2rem;
-        padding-top: 120px;
       }
-      
+
       .text h3 {
-        font-size: 1.2rem;
+        font-size: 1rem;
       }
 
       .text h2 {
-        font-size: 1.4rem;
+        font-size: 1.1rem;
       }
     }
   </style>
