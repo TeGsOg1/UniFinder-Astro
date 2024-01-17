@@ -7,29 +7,23 @@ import Layout from "../../layouts/Layout.astro";
 ---
 
 <Layout title="UF-UCALP">
-  <UniCard
-    img="/Rectorado-UCALP.jpg"
-    Uni="UCALP"
-    estado="/Privada.png"
-    estadotxt="Privada"
-  >
+  <UniCard Uni="UCALP" estado="/Privada.png" estadotxt="Privada">
     Enfrentamos grandes desafíos, desde el ámbito educativo y personal, y
     trabajamos diariamente para adaptarnos a estos nuevos y modernos tiempos que
     nos toca vivir.
     <br />
-     En nuestra Universidad, encontrarán un espacio ideal para la formación
-    integral de nuestros alumnos dentro de los valores personales según el
-    modelo cristiano.¡Sean bienvenidos! Y sigamos educando juntos, desde la
-    Universidad Católica de La Plata, a los ciudadanos del mañana.
+    En nuestra Universidad, encontrarán un espacio ideal para la formación integral
+    de nuestros alumnos dentro de los valores personales según el modelo cristiano.¡Sean
+    bienvenidos! Y sigamos educando juntos, desde la Universidad Católica de La Plata,
+    a los ciudadanos del mañana.
     <br />
     <br />
-     Nuestro sistema de becas contempla las situaciones de cada uno, las
-    pasantías que colaboran con la inserción laboral de nuestros alumnos,
-    eldeporte como espacio de encuentro y el intercambio internacional que
-    permiten el contacto con otras culturas, completan una porpuesta accesible,
-    humana y práctica.
+    Nuestro sistema de becas contempla las situaciones de cada uno, las pasantías
+    que colaboran con la inserción laboral de nuestros alumnos, eldeporte como espacio
+    de encuentro y el intercambio internacional que permiten el contacto con otras
+    culturas, completan una porpuesta accesible, humana y práctica.
   </UniCard>
-  <UniPgof uni="UCALP" href="https://www.ucalp.edu.ar"/>
+  <UniPgof uni="UCALP" href="https://www.ucalp.edu.ar" />
   <UniMap
     map="https://www.google.com/maps/d/u/0/embed?mid=1PwU8bzxJFL22Nbsy6NzwQy37aVylc0c&ehbc=2E312F&noprof=1"
   />
@@ -175,6 +169,7 @@ import Layout from "../../layouts/Layout.astro";
 
   .facus h1 {
     margin: 50px;
+    font-size: 40px;
   }
 
   .facus-container {
@@ -200,11 +195,16 @@ import Layout from "../../layouts/Layout.astro";
     color: white;
     background: linear-gradient(to top, #2f9ef7, rgb(1 17 255));
     border-radius: 10px 10px 0 0;
+    font-size: 30px;
   }
 
   section ul {
     margin-left: 30px;
     font-size: 1.4rem;
+  }
+
+  section ul li {
+    margin-bottom: 10px;
   }
 
   @media (width < 460px) {

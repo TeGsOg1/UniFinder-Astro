@@ -8,7 +8,6 @@ import UniPgof from "../../components/Uni-pgof.astro";
 
 <Layout title="UF-UNLP">
   <UniCard
-    img="/rectorado-institucional.jpg"
     Uni="UNLP"
     estado="/Publica.png"
     estadotxt="Publica"
@@ -331,6 +330,7 @@ import UniPgof from "../../components/Uni-pgof.astro";
 
   .facus h1 {
     margin: 50px;
+    font-size: 40px;
   }
 
   .facus-container {
@@ -356,12 +356,19 @@ import UniPgof from "../../components/Uni-pgof.astro";
     color: white;
     background: linear-gradient(to top, #2f9ef7, rgb(1 17 255));
     border-radius: 10px 10px 0 0;
+    font-size: 30px;
   }
 
   section ul {
     margin-left: 30px;
     font-size: 1.4rem;
   }
+
+  section ul li {
+    margin-bottom: 10px;
+  }
+
+
 
   @media (width < 460px) {
     .facus h1 {

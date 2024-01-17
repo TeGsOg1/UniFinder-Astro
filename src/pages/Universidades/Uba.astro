@@ -7,13 +7,7 @@ import Layout from "../../layouts/Layout.astro";
 ---
 
 <Layout title="UF-UBA">
-  <UniCard
-    img="/argencon_uba.jpg"
-    Uni="UBA"
-    ,
-    estado="/Publica.png"
-    estadotxt="Publica"
-  >
+  <UniCard Uni="UBA" , estado="/Publica.png" estadotxt="Publica">
     La UBA Fue fundada el 12 de agosto de 1821 por el gobernador de la provincia
     de Buenos Aires, Martín Rodríguez, y su ministro de gobierno, Bernardino
     Rivadavia. La UBA es la mayor universidad de Argentina y está considerada
@@ -27,7 +21,7 @@ import Layout from "../../layouts/Layout.astro";
     (especializaciones y maestrías), de quinto nivel (doctorados) y de sexto
     nivel (posdoctorados)
   </UniCard>
-  <UniPgof uni="UBA" href="https://www.uba.ar"/>
+  <UniPgof uni="UBA" href="https://www.uba.ar" />
   <UniMap
     map="https://www.google.com/maps/d/u/0/embed?mid=1FwENuNI9UCW4JjrcF_dLHlCB-OuAgFo&ehbc=2E312F&noprof=1"
   />
@@ -232,7 +226,7 @@ import Layout from "../../layouts/Layout.astro";
           <li>Tecnicatura en Lengua y Cultura Portuguesa (3 años)</li>
         </ul>
       </section>
-      
+
       <section>
         <div><h2>Facultad de Ingeniería</h2></div>
         <ul>
@@ -309,6 +303,7 @@ import Layout from "../../layouts/Layout.astro";
 
   .facus h1 {
     margin: 50px;
+    font-size: 40px;
   }
 
   .facus-container {
@@ -334,11 +329,16 @@ import Layout from "../../layouts/Layout.astro";
     color: white;
     background: linear-gradient(to top, #2f9ef7, rgb(1 17 255));
     border-radius: 10px 10px 0 0;
+    font-size: 30px;
   }
 
   section ul {
     margin-left: 30px;
     font-size: 1.4rem;
+  }
+
+  section ul li {
+    margin-bottom: 10px;
   }
 
   @media (width < 460px) {

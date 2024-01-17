@@ -1,0 +1,54 @@
+---
+interface Props {
+    nombre:string;
+    img:string;
+}
+
+const { nombre, img } = Astro.props
+---
+
+<div class="card">
+  <figure>
+    <img src=`/${img}.jpg` alt="" />
+  </figure>
+  <div class="contenido">
+    <h3>{nombre}</h3>
+    <h4>
+      <slot />
+    </h4>
+  </div>
+</div>
+
+
+<style>
+    .card {
+        margin: 20px 20px;
+        width: 300px;
+        height: 700px;
+        box-shadow: 0px 1px 10px rgb(0, 0, 0, 0.2);
+        transition: all 0.3s ease;
+    }
+
+    img {
+        width: 100%;
+        height:400px;
+    }
+
+    h3 {
+        font-size: 26px;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    h4 {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 20px;
+    }
+
+    
+  .card:hover {
+    box-shadow: 5px 5px 20px rgb(0, 0, 0, 0.4);
+    transform: translateY(-3%);
+  }
+</style>

@@ -1,38 +1,41 @@
 ---
 interface Props {
-    Uni: string;
-    estadotxt: string;
-    estado: string;
+  uni: string;
+  href: string
 }
 
-const { Uni, estado, estadotxt } = Astro.props
-
+const { uni, href } = Astro.props;
 ---
 
 <article class="flex-container">
-    <div class="unis-flex" id="unis-flex-izq">
-      <img src=`/Rectorado-${Uni}.jpg` id="uni-img" alt={`Rectorado ${Uni}`} style={`view-transition-name:${Uni}`}>
+  <div class="unis-flex" id="unis-flex-izq">
+    <img
+      src={`../public/Rectorado-${uni}.jpg`}
+      id="uni-img"
+      alt={`Rectorado ${uni}`}
+      style={`view-transition-name:${uni}`}
+    />
+  </div>
+  <div class="unis-flex" id="unis-flex-der">
+    <div id="uni-name">
+      <h2>{uni}</h2>
     </div>
-    <div class="unis-flex" id="unis-flex-der">
-      <div id="uni-name">
-        <h2>{Uni}</h2>
-      </div>
-      <h4>
-        <slot/>
-      </h4>
-      <br>
-      <div class="priv-pub">
-        <img src={ estado } alt=`${estadotxt}.img`  id="priv-pub-img" transition:z-index="5">
-        <h5 id="priv-pub-txt">Universidad { estadotxt }</h5>
-      </div>
-    </div>
+    <h4>
+      <p>
+        <slot />
+      </p>
+    </h4>
+    <h5>
+      <slot name="Redes" />
+    </h5>
+    <a href=`/Universidades/${href}`>Más Info</a>
+  </div>
 </article>
 
 <style>
-.flex-container {
+  .flex-container {
     display: flex;
     width: 100%;
-    margin-top: 10px;
   }
 
   .unis-flex {
@@ -47,12 +50,12 @@ const { Uni, estado, estadotxt } = Astro.props
   }
 
   #unis-flex-izq {
-    margin-top: 60px;
+    margin-top: 30px;
   }
 
   #unis-flex-der {
     color: #fff;
-    margin-top: 60px;
+    margin-top: 30px;
     flex-grow: calc(1);
     width: 40%;
     background: rgb(3, 3, 117);
@@ -63,6 +66,18 @@ const { Uni, estado, estadotxt } = Astro.props
   #unis-flex-der h4 {
     font-size: 1.5rem;
     margin: 5px;
+  }
+
+  #unis-flex-der h5 {
+    font-size: 1.3rem;
+  }
+
+  a {
+    background-color: #3459ff;
+    border-radius: 5px;
+    color: #fff;
+    padding: 12px 20px;
+    margin-left: 5px;
   }
 
   #uni-name {
@@ -81,30 +96,15 @@ const { Uni, estado, estadotxt } = Astro.props
     margin-right: 5px;
   }
 
+  svg {
+    width: 20px;
+    height: 20px;
+  }
+
   #unis-flex-der h2 {
-    font-family:
-      system-ui,
-      -apple-system,
-      BlinkMacSystemFont,
-      "Segoe UI",
-      Roboto,
-      Oxygen,
-      Ubuntu,
-      Cantarell,
-      "Open Sans",
-      "Helvetica Neue",
-      sans-serif;
-    background: #ccc;
-    background: linear-gradient(
-      to right,
-      rgb(0, 221, 255),
-      rgb(0, 174, 255),
-      rgb(0, 60, 255)
-    );
+    color: #fff;
     font-size: 3rem;
     text-align: center;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
     font-weight: 500;
   }
 
@@ -115,13 +115,13 @@ const { Uni, estado, estadotxt } = Astro.props
 
   /* Media Querys */
 
-  @media screen and (max-width: 1270px){
+  @media screen and (max-width: 1270px) {
     #unis-flex-der h4 {
       font-size: 1.3rem;
     }
   }
 
-  @media screen and (max-width: 1027px){
+  @media screen and (max-width: 1027px) {
     #unis-flex-der h4 {
       font-size: 1.2rem;
     }
@@ -140,6 +140,7 @@ const { Uni, estado, estadotxt } = Astro.props
     #unis-flex-der {
       width: 100%;
       margin-top: 0px;
+      padding-bottom: 30px;
     }
     #unis-flex-izq {
       height: auto;
@@ -154,20 +155,4 @@ const { Uni, estado, estadotxt } = Astro.props
       width: 400px;
     }
   }
-
-  @media screen and (max-width: 929px) {
-    #unis-flex-der {
-      height: auto;
-    }
-  }
-
-  @media screen and (max-width: 752px){
-
-  }
-
-  @media screen and (max-width: 550px) {
-
-
-
-  }
-  </style>
+</style>
