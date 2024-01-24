@@ -1,2 +1,3 @@
-![Opera Captura de pantalla_2024-01-03_192706_unifinder-astro-tc netlify app](https://github.com/TeGsOg1/UniFinder-Astro/assets/137315681/a91bbe3c-3630-47f7-bdf3-41140867c348)
-![Opera Captura de pantalla_2024-01-03_193838_unifinder-astro-tc netlify app](https://github.com/TeGsOg1/UniFinder-Astro/assets/137315681/28fdaab0-90d6-40b7-b020-9929e45a6fb9)
+![Opera Captura de pantalla_2024-01-17_014058_localhost](https://github.com/TeGsOg1/UniFinder-Astro/assets/137315681/601d48f4-7cdd-4657-8478-e77ecad52e81)
+
+![Opera Captura de pantalla_2024-01-17_014139_localhost](https://github.com/TeGsOg1/UniFinder-Astro/assets/137315681/a86dab52-633f-4732-a992-90081e389363)
