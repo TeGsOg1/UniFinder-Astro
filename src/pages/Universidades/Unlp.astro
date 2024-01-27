@@ -7,23 +7,19 @@ import UniPgof from "../../components/Uni-pgof.astro";
 ---
 
 <Layout title="UF-UNLP">
-  <UniCard
-    Uni="UNLP"
-    estado="/Publica.png"
-    estadotxt="Publica"
-  >
+  <UniCard Uni="UNLP" estado="/Publica.png" estadotxt="Publica">
     La Universidad Nacional de La Plata, fue fundada en 1905 por el doctor
     Joaquín Víctor González.
     <br />
     <br />
-     La oferta académica de la UNLP incluye 111 carreras de grado -157 títulos-
-    y 170 de posgrado (el 85% están acreditadas o en trámite, por la Comisión
-    Nacional de Evaluación y Acreditación Universitaria –CONEAU-), además de
-    unos 500 cursos de posgrado. Entre carreras y cursos recibe unos 22.000
-    alumnos de posgrado. Además cuenta con 100 cátedras libres dependientes de
-    la Presidencia, que se suman a las muchas que funcionan en las Facultades.
+    La oferta académica de la UNLP incluye 111 carreras de grado -157 títulos- y
+    170 de posgrado (el 85% están acreditadas o en trámite, por la Comisión Nacional
+    de Evaluación y Acreditación Universitaria –CONEAU-), además de unos 500 cursos
+    de posgrado. Entre carreras y cursos recibe unos 22.000 alumnos de posgrado.
+    Además cuenta con 100 cátedras libres dependientes de la Presidencia, que se
+    suman a las muchas que funcionan en las Facultades.
   </UniCard>
-  <UniPgof uni="UNLP" href="https://unlp.edu.ar"/>
+  <UniPgof uni="UNLP" href="https://unlp.edu.ar" />
   <UniMap
     map="https://www.google.com/maps/d/u/0/embed?mid=1l6bnbqLajZtq7SPE3EteS6qrIsux_Xw&ehbc=2E312F&noprof=1"
   />
@@ -33,35 +29,25 @@ import UniPgof from "../../components/Uni-pgof.astro";
     <h1>
       <strong>Facultades</strong>
     </h1>
+
+    <input
+      type="text"
+      name="buscador"
+      id="buscador"
+      placeholder="Buscá una carrera..."
+    />
+
     <article class="facus-container">
       <section>
-        <div><h2>Facultad de Artes</h2></div>
+        <div><h2>Facultad de Informática</h2></div>
         <ul>
-          <li>Licenciatura en Diseño en Comunicación Visual (5 años)</li>
-          <li>Profesorado en Diseño en Comunicación Visual (5 años)</li>
-          <li>Tecnicatura Universitaria en Producción Gráfica (3 años)</li>
-          <li>Licenciatura en Diseño Multimedial (5 años)</li>
-          <li>Profesorado en Diseño Multimedial (5 años)</li>
-          <li>Diseño Industrial (5 años)</li>
-          <li>Profesorado en Diseño Industrial (5 años)</li>
-          <li>Licenciatura en Música (5 años)</li>
-          <li>Profesorado en Música (5 años)</li>
-          <li>Licenciatura en Artes Plásticas (5 años)</li>
-          <li>Profesorado en Artes Plásticas (5 años)</li>
-          <li>Licenciatura en Artes Audiovisuales (5 años)</li>
-          <li>Profesorado en Artes Audiovisuales (5 años)</li>
+          <li>Licenciatura en Informática (5 años)</li>
+          <li>Licenciatura en Sistemas (5 años)</li>
+          <li>Ingeniería en Computación (5 años)</li>
+          <li>Analista Programador Universitario (3 años)</li>
           <li>
-            Licenciatura en Historia de las Artes, Orientación Artes Visuales (5
-            años)
+            Analista en Tecnologías de la Información y la Comunicación (3 años)
           </li>
-          <li>
-            Profesorado en Historia de las Artes con orientación en Artes
-            Visuales (5 años)
-          </li>
-          <li>Tecnicatura en Sonido y Grabación (3 años)</li>
-          <li>Músico Popular (3 años)</li>
-          <li>Tecnicatura Universitaria en Fotografía (3 años)</li>
-          <li>Tecnicatura Universitaria en Artes Audiovisuales (3 años)</li>
         </ul>
       </section>
 
@@ -91,16 +77,6 @@ import UniPgof from "../../components/Uni-pgof.astro";
       </section>
 
       <section>
-        <div><h2>Facultad de Ciencias Económicas</h2></div>
-        <ul>
-          <li>Contador Público (5 años)</li>
-          <li>Licenciatura en Economía (5 años)</li>
-          <li>Licenciatura en Administración (5 años)</li>
-          <li>Ciencia de Datos en Organizaciones (4 años)</li>
-        </ul>
-      </section>
-
-      <section>
         <div><h2>Facultad de Ciencias Exactas</h2></div>
         <ul>
           <li>Licenciatura en Ciencias Biológicas (5 años)</li>
@@ -118,6 +94,16 @@ import UniPgof from "../../components/Uni-pgof.astro";
       </section>
 
       <section>
+        <div><h2>Facultad de Ciencias Económicas</h2></div>
+        <ul>
+          <li>Contador Público (5 años)</li>
+          <li>Licenciatura en Economía (5 años)</li>
+          <li>Licenciatura en Administración (5 años)</li>
+          <li>Ciencia de Datos en Organizaciones (4 años)</li>
+        </ul>
+      </section>
+
+      <section>
         <div><h2>Facultad de Ciencias Jurídicas y Sociales</h2></div>
         <ul>
           <li>Abogacía (5 años)</li>
@@ -126,6 +112,37 @@ import UniPgof from "../../components/Uni-pgof.astro";
           <li>Licenciatura en Sociología (5 años)</li>
           <li>Licenciatura en Trabajo Social (5 años)</li>
           <li>Licenciatura en Turismo (4 años)</li>
+        </ul>
+      </section>
+
+      <section>
+        <div><h2>Facultad de Artes</h2></div>
+        <ul>
+          <li>Licenciatura en Diseño en Comunicación Visual (5 años)</li>
+          <li>Profesorado en Diseño en Comunicación Visual (5 años)</li>
+          <li>Tecnicatura Universitaria en Producción Gráfica (3 años)</li>
+          <li>Licenciatura en Diseño Multimedial (5 años)</li>
+          <li>Profesorado en Diseño Multimedial (5 años)</li>
+          <li>Diseño Industrial (5 años)</li>
+          <li>Profesorado en Diseño Industrial (5 años)</li>
+          <li>Licenciatura en Música (5 años)</li>
+          <li>Profesorado en Música (5 años)</li>
+          <li>Licenciatura en Artes Plásticas (5 años)</li>
+          <li>Profesorado en Artes Plásticas (5 años)</li>
+          <li>Licenciatura en Artes Audiovisuales (5 años)</li>
+          <li>Profesorado en Artes Audiovisuales (5 años)</li>
+          <li>
+            Licenciatura en Historia de las Artes, Orientación Artes Visuales (5
+            años)
+          </li>
+          <li>
+            Profesorado en Historia de las Artes con orientación en Artes
+            Visuales (5 años)
+          </li>
+          <li>Tecnicatura en Sonido y Grabación (3 años)</li>
+          <li>Músico Popular (3 años)</li>
+          <li>Tecnicatura Universitaria en Fotografía (3 años)</li>
+          <li>Tecnicatura Universitaria en Artes Audiovisuales (3 años)</li>
         </ul>
       </section>
 
@@ -165,16 +182,6 @@ import UniPgof from "../../components/Uni-pgof.astro";
           <li>Tecnicatura Universitaria en Gestión Ambiental (3 años)</li>
           <li>Tecnicatura Universitaria en Gestión Cultural (3 años)</li>
           <li>Tecnicatura Universitaria en Paleontología (3 años)</li>
-        </ul>
-      </section>
-
-      <section>
-        <div><h2>Facultad de Ciencias Veterinarias</h2></div>
-        <ul>
-          <li>Medicina Veterinaria (6 años)</li>
-          <li>Licenciatura en Producción Animal (5 años)</li>
-          <li>Tecnicatura Universitaria en Producción Apícola (3 años)</li>
-          <li>Tecnicatura Universitaria en Producción Porcina (3 años)</li>
         </ul>
       </section>
 
@@ -253,6 +260,16 @@ import UniPgof from "../../components/Uni-pgof.astro";
       </section>
 
       <section>
+        <div><h2>Facultad de Ciencias Veterinarias</h2></div>
+        <ul>
+          <li>Medicina Veterinaria (6 años)</li>
+          <li>Licenciatura en Producción Animal (5 años)</li>
+          <li>Tecnicatura Universitaria en Producción Apícola (3 años)</li>
+          <li>Tecnicatura Universitaria en Producción Porcina (3 años)</li>
+        </ul>
+      </section>
+
+      <section>
         <div><h2>Facultad de Odontología</h2></div>
         <ul>
           <li>Odontología (6 años)</li>
@@ -305,25 +322,13 @@ import UniPgof from "../../components/Uni-pgof.astro";
         <div><h2>Facultad de Arquitectura y Urbanismo</h2></div>
         <ul><li>Arquitectura (6 años)</li></ul>
       </section>
-
-      <section>
-        <div><h2>Facultad de Informática</h2></div>
-        <ul>
-          <li>Licenciatura en Informática (5 años)</li>
-          <li>Licenciatura en Sistemas (5 años)</li>
-          <li>Ingeniería en Computación (5 años)</li>
-          <li>Analista Programador Universitario (3 años)</li>
-          <li>
-            Analista en Tecnologías de la Información y la Comunicación (3 años)
-          </li>
-        </ul>
-      </section>
     </article>
+
+    <h1 id="NoCarrera">¡No hay ninguna carrera con ese nombre!</h1>
   </div>
 </Layout>
 
 <style>
-  
   .facus {
     text-align: center;
   }
@@ -331,6 +336,19 @@ import UniPgof from "../../components/Uni-pgof.astro";
   .facus h1 {
     margin: 50px;
     font-size: 40px;
+  }
+
+  input {
+    width: 600px;
+    height: 70px;
+    font-size: 1.6rem;
+    border-radius: 50px;
+    text-indent: 20px;
+    margin-bottom: 30px;
+  }
+
+  #NoCarrera {
+    display: none;
   }
 
   .facus-container {
@@ -351,6 +369,7 @@ import UniPgof from "../../components/Uni-pgof.astro";
   .facus-container section h2 {
     height: 107px;
     text-align: center;
+    justify-content: center;
     padding: 15px;
     margin-bottom: 20px;
     color: white;
@@ -368,9 +387,22 @@ import UniPgof from "../../components/Uni-pgof.astro";
     margin-bottom: 10px;
   }
 
+  .filtro {
+    display: none;
+  }
 
+  @media (width < 700px) {
+    input {
+      width: 400px;
+      font-size: 1.4rem;
+    }
+  }
 
   @media (width < 460px) {
+    input {
+      width: 290px;
+    }
+
     .facus h1 {
       font-size: 1.9rem;
     }
@@ -388,3 +420,56 @@ import UniPgof from "../../components/Uni-pgof.astro";
     }
   }
 </style>
+
+<script>
+  // Obtener el elemento HTML vacío donde se quiere insertar el texto
+  let Nocarrera = document.getElementById("NoCarrera")!;
+  // Añadir el tipo Event al parámetro e
+  document.addEventListener("keyup", (e: Event) => {
+    // Usar una aserción de tipo para acceder a las propiedades del evento de teclado
+    if ((e.target as HTMLInputElement).matches("#buscador")) {
+      // Usar otra aserción de tipo para acceder a la propiedad key
+      if ((e as KeyboardEvent).key === "Escape")
+        (e.target as HTMLInputElement).value = "";
+      // Añadir el tipo NodeListOf<HTMLElement> a la variable carrera
+      const carrera: NodeListOf<HTMLElement> = document.querySelectorAll("li");
+      // Añadir una variable para almacenar el resultado del filtro
+      let resultado: HTMLElement[] = [];
+      carrera.forEach((carrera) => {
+        carrera
+          .textContent!.toLowerCase()
+          .includes((e.target as HTMLInputElement).value.toLowerCase())
+          ? carrera.classList.remove("filtro")
+          : carrera.classList.add("filtro");
+        // Añadir los elementos que no tienen la clase filtro al resultado
+        if (!carrera.classList.contains("filtro")) {
+          resultado.push(carrera);
+        }
+      });
+      // Añadir el tipo NodeListOf<HTMLElement> a la variable section
+      const section: NodeListOf<HTMLElement> =
+        document.querySelectorAll("section");
+      section.forEach((section) => {
+        // Contar el número de elementos li dentro del section
+        const liCount = section.querySelectorAll("li").length;
+        // Contar el número de elementos li con la clase filtro dentro del section
+        const filtroCount = section.querySelectorAll("li.filtro").length;
+        // Si son iguales, significa que todos los li están ocultos
+        if (liCount === filtroCount) {
+          // Aplicar la clase filtro al section para ocultarlo también
+          section.classList.add("filtro");
+        } else {
+          // Quitar la clase filtro al section para mostrarlo
+          section.classList.remove("filtro");
+        }
+      });
+      // Comprobar si el resultado está vacío o no
+      if (resultado.length === 0) {
+        // Mostrar el elemento HTML vacío con el texto
+        Nocarrera.style.display = "block";
+      } else {
+        Nocarrera.style.display = "none";
+      }
+    }
+  });
+</script>

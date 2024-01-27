@@ -33,6 +33,14 @@ import Layout from "../../layouts/Layout.astro";
     <h1>
       <strong>Facultades</strong>
     </h1>
+
+    <input
+      type="text"
+      name="buscador"
+      id="buscador"
+      placeholder="Buscá una carrera..."
+    />
+
     <article class="facus-container">
       <section>
         <div><h2>Facultad de Derecho y Ciencias Políticas</h2></div>
@@ -159,6 +167,7 @@ import Layout from "../../layouts/Layout.astro";
         </ul>
       </section>
     </article>
+    <h1 id="NoCarrera">¡No hay ninguna carrera con ese nombre!</h1>
   </div>
 </Layout>
 
@@ -170,6 +179,19 @@ import Layout from "../../layouts/Layout.astro";
   .facus h1 {
     margin: 50px;
     font-size: 40px;
+  }
+
+  input {
+    width: 600px;
+    height: 70px;
+    font-size: 1.6rem;
+    border-radius: 50px;
+    text-indent: 20px;
+    margin-bottom: 30px;
+  }
+
+  #NoCarrera {
+    display: none;
   }
 
   .facus-container {
@@ -190,6 +212,7 @@ import Layout from "../../layouts/Layout.astro";
   .facus-container section h2 {
     height: 107px;
     text-align: center;
+    justify-content: center;
     padding: 15px;
     margin-bottom: 20px;
     color: white;
@@ -207,7 +230,26 @@ import Layout from "../../layouts/Layout.astro";
     margin-bottom: 10px;
   }
 
+  .filtro {
+    display: none;
+  }
+
+  @media (width < 700px) {
+    input {
+      width: 400px;
+      font-size: 1.4rem;
+    }
+  }
+
   @media (width < 460px) {
+    input {
+      width: 290px;
+    }
+
+    .facus h1 {
+      font-size: 1.9rem;
+    }
+
     .facus-container {
       grid-template-columns: 1fr;
     }
@@ -221,3 +263,56 @@ import Layout from "../../layouts/Layout.astro";
     }
   }
 </style>
+
+<script>
+  // Obtener el elemento HTML vacío donde se quiere insertar el texto
+  let Nocarrera = document.getElementById("NoCarrera")!;
+  // Añadir el tipo Event al parámetro e
+  document.addEventListener("keyup", (e: Event) => {
+    // Usar una aserción de tipo para acceder a las propiedades del evento de teclado
+    if ((e.target as HTMLInputElement).matches("#buscador")) {
+      // Usar otra aserción de tipo para acceder a la propiedad key
+      if ((e as KeyboardEvent).key === "Escape")
+        (e.target as HTMLInputElement).value = "";
+      // Añadir el tipo NodeListOf<HTMLElement> a la variable carrera
+      const carrera: NodeListOf<HTMLElement> = document.querySelectorAll("li");
+      // Añadir una variable para almacenar el resultado del filtro
+      let resultado: HTMLElement[] = [];
+      carrera.forEach((carrera) => {
+        carrera
+          .textContent!.toLowerCase()
+          .includes((e.target as HTMLInputElement).value.toLowerCase())
+          ? carrera.classList.remove("filtro")
+          : carrera.classList.add("filtro");
+        // Añadir los elementos que no tienen la clase filtro al resultado
+        if (!carrera.classList.contains("filtro")) {
+          resultado.push(carrera);
+        }
+      });
+      // Añadir el tipo NodeListOf<HTMLElement> a la variable section
+      const section: NodeListOf<HTMLElement> =
+        document.querySelectorAll("section");
+      section.forEach((section) => {
+        // Contar el número de elementos li dentro del section
+        const liCount = section.querySelectorAll("li").length;
+        // Contar el número de elementos li con la clase filtro dentro del section
+        const filtroCount = section.querySelectorAll("li.filtro").length;
+        // Si son iguales, significa que todos los li están ocultos
+        if (liCount === filtroCount) {
+          // Aplicar la clase filtro al section para ocultarlo también
+          section.classList.add("filtro");
+        } else {
+          // Quitar la clase filtro al section para mostrarlo
+          section.classList.remove("filtro");
+        }
+      });
+      // Comprobar si el resultado está vacío o no
+      if (resultado.length === 0) {
+        // Mostrar el elemento HTML vacío con el texto
+        Nocarrera.style.display = "block";
+      } else {
+        Nocarrera.style.display = "none";
+      }
+    }
+  });
+</script>
