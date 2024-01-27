@@ -1,16 +1,13 @@
 ---
+import EnvEmail from "../../components/EnvEmail.astro";
 import Layout from "../../layouts/Layout.astro";
-
+import FooterTitulo from "../../components/Footer-titulo.astro";
 ---
 
 <Layout title="Sugerencias">
-    <div class="container-pres">
-        <div class="ns-tit" id="texto">
-          <h2 id="titulo">Enviá tus <br>Sugerencias</h2>
-        </div>
-        <div class="ns-tit">
-          <img src="/sugerencias.png" id="img-sug" alt="">
-        </div>
+  <FooterTitulo img="sugerencias">
+    Enviános  <br> tus Sugerencias
+  </FooterTitulo>
         <div class="form-container">
           <div class="info-contact">
             <h3 class="cont-text"><strong>Rellená el formulario <br> y envianos tus opiniones</strong></h3>
@@ -36,119 +33,22 @@ import Layout from "../../layouts/Layout.astro";
                 value="https://unifinder-pruebas.tomas-crespocre.repl.co/Footer/form-comp-cont.html">
               <input type="submit" value="Enviar" class="txt-inp" id="btn-inp">
             </form>
+            <EnvEmail />
           </div>
         </div>
-        <div class="contact-email">
-          <a href="mailto:uni.finder01@gmail.com">
-            <div class="email">
-              <h3>Envianos un correo</h3>
-              <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="128"
-              height="128"
-              viewBox="0 0 24 24"
-              ><path
-                fill="#000000"
-                d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6m-2 0l-8 5l-8-5h16m0 12H4V8l8 5l8-5v10Z"
-                id="email-logo"></path>
-            </svg>
-              <h5>uni.finder01@gmail.com</h5>
-            </div>
-          </a>
-        </div>
 </Layout>
-
 <style>
-      .container-pres {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-  }
-
-  .ns-tit {
-    margin: 0 auto;
-    margin-top: 80px;
-  }
-
-  #texto {
-    margin-top: 150px;
-  }
-
-  #titulo {
-    font-family:
-      system-ui,
-      -apple-system,
-      BlinkMacSystemFont,
-      "Segoe UI",
-      Roboto,
-      Oxygen,
-      Ubuntu,
-      Cantarell,
-      "Open Sans",
-      "Helvetica Neue",
-      sans-serif;
-    background: #ccc;
-    background: linear-gradient(
-      to right,
-      rgb(5, 218, 255),
-      rgb(0, 179, 255),
-      rgb(0, 140, 255)
-    );
-    font-size: 4rem;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    height: 100%;
-
-    animation: title-appear 1s ease normal;
-  }
-
-  .ns-tit img {
-    margin-top: 30px;
-    width: 300px;
-  }
-
-  #img-sug {
-    width: 450px;
-    max-width: 100%;
-    height: auto;
-  }
-
-  .contenido {
-    text-align: center;
-    padding: 10px;
-  }
-
-  .contenido p a {
-    color: aliceblue;
-    text-decoration: none;
-    background-color: rgb(0, 76, 255);
-    padding: 10px;
-    border-radius: 8px;
-    box-shadow: 0px 1px 10px rgb(0, 0, 0, 0.2);
-
-    transition: all 0.2s;
-  }
-
-  .contenido p a:hover {
-    background-color: rgb(0, 140, 255);
-  }
 
   .form-container {
-    background: #b2fefa; /* fallback for old browsers */
-    background: -webkit-linear-gradient(
-      to right,
-      #0ed2f7,
-      #b2fefa
-    ); /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(
       to right,
       #0ed2f7,
       #b2fefa
-    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    );
 
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
     height: auto;
     margin-top: 20px;
     padding-bottom: 50px;
@@ -163,9 +63,13 @@ import Layout from "../../layouts/Layout.astro";
     margin-top: 30px;
     font-size: 2.5rem;
     margin-left: 5px;
+
   }
 
   #cont-text-det {
+    max-width: 500px;
+    text-wrap: pretty;
+    font-size: 26px;
     padding-top: 50px;
     margin-left: 5px;
   }
@@ -179,7 +83,6 @@ import Layout from "../../layouts/Layout.astro";
   form {
     background: transparent;
 
-    box-shadow: var(--shadow-elevation-medium);
     margin-top: 30px;
     padding: 20px 20px;
     border-radius: 10px;
@@ -187,6 +90,7 @@ import Layout from "../../layouts/Layout.astro";
     border: 1px solid black;
     width: 500px;
     margin-left: 10px;
+    box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.429)
   }
 
   label {
@@ -238,46 +142,16 @@ import Layout from "../../layouts/Layout.astro";
     transform: scale(1.04);
   }
 
-  .contact-email {
-    text-align: center;
-    margin: auto;
-    width: 300px;
-    height: 150px;
-    margin-top: 30px;
-  }
-
-  .contact-email a {
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-  }
-
-  .email {
-    box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.429);
-    background-color: #ffffff;
-    border: 1px solid rgb(0, 0, 0);
-    border-radius: 10px;
-    transition: all ease 0.2s;
-  }
-
-  .contact-email svg {
-    width: 50px;
-    height: auto;
-  }
-
-  .email:hover {
-    transform: translateY(-5%);
-  }
-
   /* Responsive */
 
-  @media screen and (max-width:930px) {
+  @media (width < 1120px) {
     .form-container {
+      flex-direction: column;
         height: auto;
-        padding-bottom: 20px;
     }
 
     label {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 }
 
@@ -298,21 +172,18 @@ import Layout from "../../layouts/Layout.astro";
         margin: auto;
     }
 
-    #cont-text {
+    .cont-text {
         margin-top: 30px;
-        font-size: 1.5rem;
+        font-size: 30px;
     }
 
     #btn-inp {
         width: 100px !important;
         margin: auto;
     }
-
-}
-
-@media screen and (max-width:350px) {
-    #titulo {
-        font-size: 3rem;
+    
+    .info-contact {
+      text-align: center;
     }
-}
+  }
 </style>

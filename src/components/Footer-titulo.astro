@@ -7,12 +7,12 @@ const { img } = Astro.props;
 ---
 
 <div class="container-pres">
-  <div class="ns-tit" id="texto">
+  <div class="titulo" id="texto">
     <h2 id="titulo">
         <slot />
     </h2>
   </div>
-  <div class="ns-tit">
+  <div class="titulo">
     <img src=`/${img}.png` alt="" />
   </div>
 </div>
@@ -26,7 +26,7 @@ const { img } = Astro.props;
     height: auto;
   }
 
-  .ns-tit {
+  .titulo {
     margin: 0 auto;
     margin-top: 80px;
   }
@@ -63,9 +63,30 @@ const { img } = Astro.props;
     animation: title-appear 1s ease normal;
   }
 
-  .ns-tit img {
+  .titulo img {
     margin-top: 30px;
     width: auto;
     height: 350px;
+  }
+
+  @media (width < 1120px) {
+    .container-pres{
+    flex-direction: column;
+    }
+
+    .titulo img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  @media (width < 500px) {
+    .container-pres {
+      text-align: center;
+    }
+
+    #titulo {
+      font-size: 56px;
+    }
   }
 </style>

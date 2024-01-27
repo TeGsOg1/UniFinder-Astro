@@ -1,0 +1,45 @@
+---
+import EmailBlack from "./icons/EmailBlack.astro";
+---
+
+<a href="mailto:uni.finder01@gmail.com">
+  <div class="email">
+    <h3>Envianos un correo</h3>
+    <EmailBlack />
+    <h5>uni.finder01@gmail.com</h5>
+  </div>
+</a>
+
+<style>
+  a {
+    color: black;
+  }
+
+  div {
+    margin: auto;
+    margin-top: 40px;
+    width: 300px;
+    height: 120px;
+    border: 1px solid black;
+    border-radius: 10px;
+    transition: all .5s;
+    box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.429);
+    text-align: center;
+    justify-content: center;
+
+  }
+
+  h5 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 23px;
+  }
+
+  .email:hover {
+    transform: translateY(-5%);
+    box-shadow: 1px 10px 10px rgba(0, 0, 0, 0.30);
+  }
+
+</style>
