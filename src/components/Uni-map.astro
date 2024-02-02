@@ -3,33 +3,35 @@ interface Props {
   map: string;
 }
 
-const { map } = Astro.props
-
+const { map } = Astro.props;
 ---
 
 <div class="map-container">
   <div class="map-flex" id="map-flex-izq">
     <h1><strong>Facultades</strong></h1>
     <h3 id="map-txt">
-      Te invitamos a ver cada una de las <br />
-       cuales conforman a esta universidad junto con sus respectivas <br />
-       carreras y un mapa que señala cada facultad.
+      <p>
+        Te invitamos a ver cada una de las cuales conforman a esta universidad
+        junto con sus respectivas carreras, un buscador para poder encontrar la
+        carrera que quieras y un mapa que señala cada facultad.
+      </p>
     </h3>
   </div>
   <div class="map-flex" id="map-flex-der">
     <h2>Mapa de facultades</h2>
-    <iframe
-      title="Mapa de las facultades de la Universidad"
-      id="map"
-      src={ map }
+    <iframe title="Mapa de las facultades de la Universidad" id="map" src={map}
     ></iframe>
   </div>
 </div>
 
 <style>
-
-.map-container {
-    background: linear-gradient( to right, rgb(0, 200, 255), rgb(0, 140, 255), rgb(0, 89, 255));
+  .map-container {
+    background: linear-gradient(
+      to right,
+      rgb(0, 200, 255),
+      rgb(0, 140, 255),
+      rgb(0, 89, 255)
+    );
     display: flex;
     flex-wrap: wrap;
 
@@ -40,92 +42,88 @@ const { map } = Astro.props
 
     width: 100%;
     height: 600px;
-}
+  }
 
-.map-flex {
+  .map-flex {
     width: 50%;
-}
+  }
 
-#map {
+  #map {
     width: 100%;
     height: 450px;
-}
+  }
 
-.map-container h1 {
-  
-  margin-top: 30px;
-  font-size: 3rem;
-}
-
-
-
-#map-flex-der {
-    flex-grow: calc(1); 
-    width: 40%;
-    
-}
-
-#map-flex-izq {
-    padding: 0 20px;
-    height: 100%;
-}
-
-#map-txt {
-  margin-top: 110px;
-  font-size: 2.3rem;
- width: 100%;
-}
-
-
-
-/* Media Querys */
-
-@media (width < 941px) {
-  .map-container {
-    flex-direction: column;
-    height: auto;
+  .map-container h1 {
+    margin-top: 30px;
+    font-size: 3rem;
   }
 
   #map-flex-der {
-    width: 100%;
-    margin-top: 30px;
+    flex-grow: calc(1);
+    width: 40%;
   }
 
   #map-flex-izq {
-    padding: 0;
+    padding: 0 20px;
+    height: 100%;
+  }
+
+  #map-txt {
+    margin-top: 110px;
+    font-size: 2.3rem;
     width: 100%;
-}
-
-  #map-txt {
-  margin-top: 0;
-  font-size: 1.8rem;
-}
-
-.map-container h1 {
-  top: 0;
-  margin-bottom: 30px;
-}
-
-}
-
-@media (width < 560px) {
-
-  .map-container h1 {
-    font-size: 2rem;
   }
 
-  #map-txt {
-    font-size: 1.5rem;
+  /* Media Querys */
+
+  @media (width < 941px) {
+    .map-container {
+      flex-direction: column;
+      height: auto;
+    }
+
+    #map-flex-der {
+      width: 100%;
+      margin-top: 30px;
+    }
+
+    #map-flex-izq {
+      padding: 0;
+      width: 100%;
+    }
+
+    #map-txt {
+      margin-top: 0;
+      font-size: 1.8rem;
+    }
+
+    #map-txt p {
+      text-wrap: pretty;
+    }
+
+    .map-container h1 {
+      top: 0;
+      margin-bottom: 30px;
+    }
   }
 
-  h2 {
-    font-size: 1.9rem;
-  }
-}
+  @media (width < 560px) {
+    .map-container h1 {
+      font-size: 2rem;
+    }
 
-@media (width < 380px) {
+    #map-txt {
+      font-size: 1.5rem;
+    }
+
+    h2 {
+      font-size: 1.9rem;
+    }
+  }
+
+  @media (width < 380px) {
     #inv-facu {
-        font-size: 1.4rem;
+      font-size: 1.4rem;
     }
   }
 </style>
