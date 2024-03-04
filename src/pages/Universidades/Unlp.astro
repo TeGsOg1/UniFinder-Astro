@@ -423,6 +423,7 @@ import UniPgof from "../../components/Uni-pgof.astro";
 </style>
 
 <script>
+  document.addEventListener('astro:page-load', () => {
   // Obtener el elemento HTML vacío donde se quiere insertar el texto
   let Nocarrera = document.getElementById("NoCarrera")!;
   // Añadir el tipo Event al parámetro e
@@ -473,4 +474,5 @@ import UniPgof from "../../components/Uni-pgof.astro";
       }
     }
   });
+});
 </script>
