@@ -137,6 +137,8 @@ import Card from "../components/Card.astro";
     background-image: var(--Imagebg-);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -226,10 +228,14 @@ import Card from "../components/Card.astro";
 
     .uf-presentacion span {
       font-size: 6rem;
-      color: rgb(31, 84, 229);
-      border-bottom: 0px;
-      -webkit-text-stroke: rgb(6, 187, 237);
-      text-stroke: rgb(6, 187, 237);
+      -webkit-text-stroke: 4px rgb(1, 30, 117);
+      border-bottom: none;
+
+    }
+
+    .uf-presentacion {
+      background-position: center;
+
     }
 
     .uf-presentacion-second {
@@ -237,6 +243,7 @@ import Card from "../components/Card.astro";
       padding: 15px;
       border: rgb(21, 90, 201) 1px solid;
       border-radius: 50px;
+      overflow: hidden;
     }
   }
 
