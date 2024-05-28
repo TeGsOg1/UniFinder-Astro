@@ -10,6 +10,8 @@ Dentro encontrarás:
 - **Mapa de ubicación**: Visualiza la ubicación de las facultades dentro de la universidad que desees ver, junto con información de contacto.
 - **Test vocacionales**: Realiza tres pruebas para descubrir cuál es tu carrera ideal.
 
+**El transaldo del proyecto al framework fue hecho de manera totalmente individual** - El proyecto original fue creado en gruo
+
 
 ![Opera Captura de pantalla_2024-01-17_014058_localhost](https://github.com/TeGsOg1/UniFinder-Astro/assets/137315681/601d48f4-7cdd-4657-8478-e77ecad52e81)
 
