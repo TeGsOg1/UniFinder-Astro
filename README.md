@@ -1,15 +1,15 @@
 # UniFinder - AstroBuild 🚀
 
-Esta página recopila información de la UNLP, UCALP y UBA. 🎓 
+Esta página recopila información de las universidades UNLP, UCALP y UBA. 🎓
 
-Dentro encontrarás: 
-1. Las becas que provee cada una, tambien podrás encontrar las tutorías, relaciones internacionales, etc.
+Dentro encontrarás:
 
-2. Un buscador que te permite encontrar la carrera que desees buscar dentro de cada universidad junto con sus años de cursada.
+- **Becas**: Información sobre las becas que provee cada universidad.
+- **Tutorías y relaciones internacionales**: Detalles sobre las tutorías disponibles y las oportunidades de intercambio.
+- **Buscador de carreras**: Encuentra la carrera que deseas dentro de cada universidad, junto con los años de cursada.
+- **Mapa de ubicación**: Visualiza la ubicación de las facultades dentro de la universidad que desees ver, junto con información de contacto.
+- **Test vocacionales**: Realiza tres pruebas para descubrir cuál es tu carrera ideal.
 
-3. Un mapa que te indicará la ubicación junto con informacion de contacto de cada facultad dentro de la universidad que desees ver.
-
-4. Tres test vocacionales para que puedas descubrir cual es tu carrera ideal. 
 
 ![Opera Captura de pantalla_2024-01-17_014058_localhost](https://github.com/TeGsOg1/UniFinder-Astro/assets/137315681/601d48f4-7cdd-4657-8478-e77ecad52e81)
 
